@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.DistributedServices.WebApi", "WarcraftApi.DistributedServices.WebApi\WarcraftApi.DistributedServices.WebApi.csproj", "{62A31C79-1C4B-4E78-93E3-C390E894C016}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Tests", "0-Tests", "{4154C900-4D99-4569-8FDB-2C2A5404B6DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-DistributedServices", "1-DistributedServices", "{BF3492C4-7F3E-42E3-8007-5A440AB0C1CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-ApplicationServices", "2-ApplicationServices", "{DD2FDE8E-1640-4349-86BB-73A80FC411C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-DomainServices", "3-DomainServices", "{6FAF66BB-F664-4398-ACB3-66C6D724FCF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-InfraestructureServices", "4-InfraestructureServices", "{668CFBE0-1BFA-4167-A38F-1F1A8C720779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.ApplicationServices.Application", "WarcraftApi.ApplicationServices.Application\WarcraftApi.ApplicationServices.Application.csproj", "{845155AA-26C3-4039-A16D-3B9C907C63C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.DomainServices.Domain", "WarcraftApi.DomainServices.Domain\WarcraftApi.DomainServices.Domain.csproj", "{8EA46045-F303-466C-9024-443AB981EE6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-CrossCutting", "5-CrossCutting", "{FF9955B8-CA6F-47C3-B296-23B1D8CAB457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.CrossCutting.Models", "WarcraftApi.CrossCutting.Models\WarcraftApi.CrossCutting.Models.csproj", "{CB2D21F0-62D4-4A7D-A41E-C57A9CDFA642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.CrossCutting.Utils", "WarcraftApi.CrossCutting.Utils\WarcraftApi.CrossCutting.Utils.csproj", "{F8231DBE-B155-4C89-9293-75234763A502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.CrossCutting.Aspects", "WarcraftApi.CrossCutting.Aspects\WarcraftApi.CrossCutting.Aspects.csproj", "{32C509BF-51CA-485B-9291-BC6D4049259B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.DistributedServices.Models", "WarcraftApi.DistributedServices.Models\WarcraftApi.DistributedServices.Models.csproj", "{C3F512C1-E8BD-422C-A703-6029068B5BD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.DomainServices.Models", "WarcraftApi.DomainServices.Models\WarcraftApi.DomainServices.Models.csproj", "{80AC1292-D449-4A4A-95BB-4CA6E22EAB39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.Infraestructure.Models", "WarcraftApi.Infraestructure.Models\WarcraftApi.Infraestructure.Models.csproj", "{33E991CE-FDB2-4731-A82D-B7CAFDD6046C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.Infraestructure.Repository", "WarcraftApi.Infraestructure.Repository\WarcraftApi.Infraestructure.Repository.csproj", "{9CD5B2C6-9944-4F7C-9436-2DF148B2B56E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.DomainServices.RepositoryContracts", "WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj", "{68C5F024-23A1-49A4-9E3E-93CC46B77645}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62A31C79-1C4B-4E78-93E3-C390E894C016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62A31C79-1C4B-4E78-93E3-C390E894C016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62A31C79-1C4B-4E78-93E3-C390E894C016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62A31C79-1C4B-4E78-93E3-C390E894C016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845155AA-26C3-4039-A16D-3B9C907C63C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845155AA-26C3-4039-A16D-3B9C907C63C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845155AA-26C3-4039-A16D-3B9C907C63C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845155AA-26C3-4039-A16D-3B9C907C63C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA46045-F303-466C-9024-443AB981EE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA46045-F303-466C-9024-443AB981EE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA46045-F303-466C-9024-443AB981EE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA46045-F303-466C-9024-443AB981EE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2D21F0-62D4-4A7D-A41E-C57A9CDFA642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2D21F0-62D4-4A7D-A41E-C57A9CDFA642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2D21F0-62D4-4A7D-A41E-C57A9CDFA642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2D21F0-62D4-4A7D-A41E-C57A9CDFA642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8231DBE-B155-4C89-9293-75234763A502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8231DBE-B155-4C89-9293-75234763A502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8231DBE-B155-4C89-9293-75234763A502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8231DBE-B155-4C89-9293-75234763A502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C509BF-51CA-485B-9291-BC6D4049259B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C509BF-51CA-485B-9291-BC6D4049259B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C509BF-51CA-485B-9291-BC6D4049259B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C509BF-51CA-485B-9291-BC6D4049259B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F512C1-E8BD-422C-A703-6029068B5BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F512C1-E8BD-422C-A703-6029068B5BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F512C1-E8BD-422C-A703-6029068B5BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F512C1-E8BD-422C-A703-6029068B5BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80AC1292-D449-4A4A-95BB-4CA6E22EAB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AC1292-D449-4A4A-95BB-4CA6E22EAB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AC1292-D449-4A4A-95BB-4CA6E22EAB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AC1292-D449-4A4A-95BB-4CA6E22EAB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E991CE-FDB2-4731-A82D-B7CAFDD6046C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E991CE-FDB2-4731-A82D-B7CAFDD6046C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E991CE-FDB2-4731-A82D-B7CAFDD6046C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E991CE-FDB2-4731-A82D-B7CAFDD6046C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD5B2C6-9944-4F7C-9436-2DF148B2B56E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD5B2C6-9944-4F7C-9436-2DF148B2B56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD5B2C6-9944-4F7C-9436-2DF148B2B56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD5B2C6-9944-4F7C-9436-2DF148B2B56E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C5F024-23A1-49A4-9E3E-93CC46B77645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C5F024-23A1-49A4-9E3E-93CC46B77645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C5F024-23A1-49A4-9E3E-93CC46B77645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C5F024-23A1-49A4-9E3E-93CC46B77645}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87EFC723-3517-4C2A-927B-8F5E48686B81}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62A31C79-1C4B-4E78-93E3-C390E894C016} = {BF3492C4-7F3E-42E3-8007-5A440AB0C1CD}
+		{845155AA-26C3-4039-A16D-3B9C907C63C6} = {DD2FDE8E-1640-4349-86BB-73A80FC411C9}
+		{8EA46045-F303-466C-9024-443AB981EE6D} = {6FAF66BB-F664-4398-ACB3-66C6D724FCF0}
+		{CB2D21F0-62D4-4A7D-A41E-C57A9CDFA642} = {FF9955B8-CA6F-47C3-B296-23B1D8CAB457}
+		{F8231DBE-B155-4C89-9293-75234763A502} = {FF9955B8-CA6F-47C3-B296-23B1D8CAB457}
+		{32C509BF-51CA-485B-9291-BC6D4049259B} = {FF9955B8-CA6F-47C3-B296-23B1D8CAB457}
+		{C3F512C1-E8BD-422C-A703-6029068B5BD3} = {BF3492C4-7F3E-42E3-8007-5A440AB0C1CD}
+		{80AC1292-D449-4A4A-95BB-4CA6E22EAB39} = {6FAF66BB-F664-4398-ACB3-66C6D724FCF0}
+		{33E991CE-FDB2-4731-A82D-B7CAFDD6046C} = {668CFBE0-1BFA-4167-A38F-1F1A8C720779}
+		{9CD5B2C6-9944-4F7C-9436-2DF148B2B56E} = {668CFBE0-1BFA-4167-A38F-1F1A8C720779}
+		{68C5F024-23A1-49A4-9E3E-93CC46B77645} = {6FAF66BB-F664-4398-ACB3-66C6D724FCF0}
+	EndGlobalSection
+EndGlobal

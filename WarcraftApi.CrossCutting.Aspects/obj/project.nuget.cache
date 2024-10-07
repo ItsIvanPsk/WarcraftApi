@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z0DQuh0Xh7NvrLI/JGYKhuVG3WezsLZcjhTaESVO27V+q47ujWWTCVvzMxkjslWkWWx7gaLXGE/Jg6b3s3ZqiQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Aspects\\WarcraftApi.CrossCutting.Aspects.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\fody\\6.7.0\\fody.6.7.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\log4net\\3.0.1\\log4net.3.0.1.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\methodboundaryaspect.fody\\2.0.149\\methodboundaryaspect.fody.2.0.149.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
