@@ -1,61 +1,46 @@
-﻿using WarcraftApi.DomainServices.RepositoryContracts;
+﻿using System.Data;
+using System.Data.SqlTypes;
+using Microsoft.EntityFrameworkCore;
+using MySqlConnector; // Usar el espacio de nombres correcto para EF Core
+using WarcraftApi.DomainServices.RepositoryContracts;
 using WarcraftApi.Infraestructure.Models;
+using WarcraftApi.Infraestructure.Persistance;
 
-namespace WarcraftApi.Infraestructure.Repository.Implementations;
-
-public class CharacterRepository : ICharacterRepository
+namespace WarcraftApi.Infraestructure.Repository.Implementations
 {
-    public async Task<List<CharacterDm>> GetCharacters()
+    public class CharacterRepository : ICharacterRepository
     {
-        var result = new List<CharacterDm>
+        private readonly ApplicationDbContext _dbContext;
+
+        public CharacterRepository(ApplicationDbContext dbContext)
         {
-            new CharacterDm
+            _dbContext = dbContext;
+        }
+
+        public async Task<List<CharacterDm>> GetCharacters()
+        {
+            var result = await _dbContext.CharacterDm.ToListAsync();
+            if (result.Count == 0)
             {
-                Id = 1,
-                Name = "Arthas",
-                Lore = "Once a paladin...",
-                Life = 1000f,
-                Damage = 200f,
-                Speed = 1.2f
-            },
-            new CharacterDm
-            {
-                Id = 2,
-                Name = "Thrall",
-                Lore = "Warchief of the Horde...",
-                Life = 1500f,
-                Damage = 250f,
-                Speed = 1.1f
+                throw new DataException("No characters where founded.");
             }
-        };
-        return result;
-    }
+            return result;
+        }
 
-    public async Task<CharacterDm> GetCharacterDetailById(int id)
-    {
-        var result = new CharacterDm
+        public async Task<CharacterDm> GetCharacterDetailById(int id)
         {
-            Id = id,
-            Name = "SampleName",
-            Lore = "SampleLore",
-            Life = 1000f,
-            Damage = 200f,
-            Speed = 1.2f
-        };
-        return result;
-    }
+            var result = await _dbContext.CharacterDm.FirstOrDefaultAsync(c => c.Id == id);
+            if (result == null)
+                throw new SqlNullValueException("Character not found.");
+            return result;
+        }
 
-    public async Task<CharacterDm> GetCharacterDetailByName(string name)
-    {
-        var result = new CharacterDm
+        public async Task<CharacterDm> GetCharacterDetailByName(string name)
         {
-            Id = 1,
-            Name = name,
-            Lore = "SampleLore",
-            Life = 1000f,
-            Damage = 200f,
-            Speed = 1.2f
-        };
-        return result;
+            var result = await _dbContext.CharacterDm.FirstOrDefaultAsync(c => c.Name == name);
+            if (result == null)
+                throw new SqlNullValueException("Character not found.");
+            return result;
+        }
     }
 }

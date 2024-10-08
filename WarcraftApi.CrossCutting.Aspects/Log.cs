@@ -1,27 +1,33 @@
 ﻿using MethodBoundaryAspect.Fody.Attributes;
 using WarcraftApi.CrossCutting.Utils.Logger;
 
-namespace WarcraftApi.CrossCutting.Aspects;
-
-[Serializable]
-public class LogAttribute : OnMethodBoundaryAspect
+namespace WarcraftApi.CrossCutting.Aspects
 {
-    private static readonly ILogger Logger = new Logger(nameof(LogAttribute));
-
-    public override void OnEntry(MethodExecutionArgs args)
+    [Serializable]
+    public class LogAttribute : OnMethodBoundaryAspect
     {
-        var className = args.Method.DeclaringType?.Name ?? "UnknownClass";
-        var methodName = args.Method.Name;
-        var parameters = string.Join(", ", args.Arguments);
+        private ILogger<LogAttribute> GetLogger()
+        {
+            return new Logger<LogAttribute>();
+        }
 
-        Logger.Info(string.Format(Resources.TimerAspectMessage, className, methodName, parameters));
-    }
+        public override void OnEntry(MethodExecutionArgs args)
+        {
+            var logger = GetLogger();
+            var className = args.Method.DeclaringType?.Name ?? "UnknownClass";
+            var methodName = args.Method.Name;
+            var parameters = string.Join(", ", args.Arguments);
 
-    public override void OnExit(MethodExecutionArgs args)
-    {
-        var className = args.Method.DeclaringType?.Name ?? "UnknownClass";
-        var methodName = args.Method.Name;
+            logger.Info($"Entering {className}.{methodName} with parameters: {parameters}");
+        }
 
-        Logger.Info(string.Format(Resources.TimerAspectMessage, className, methodName));
+        public override void OnExit(MethodExecutionArgs args)
+        {
+            var logger = GetLogger();
+            var className = args.Method.DeclaringType?.Name ?? "UnknownClass";
+            var methodName = args.Method.Name;
+
+            logger.Info($"Exiting {className}.{methodName}");
+        }
     }
 }
