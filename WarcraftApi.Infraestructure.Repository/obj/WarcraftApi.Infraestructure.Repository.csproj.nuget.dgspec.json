@@ -118,6 +118,99 @@
         }
       }
     },
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Persistance\\WarcraftApi.Infraestructure.Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Persistance\\WarcraftApi.Infraestructure.Persistance.csproj",
+        "projectName": "WarcraftApi.Infraestructure.Persistance",
+        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Persistance\\WarcraftApi.Infraestructure.Persistance.csproj",
+        "packagesPath": "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ItsIvanPsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {
+                "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql.Design": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Repository\\WarcraftApi.Infraestructure.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -144,6 +237,9 @@
             "projectReferences": {
               "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.RepositoryContracts\\WarcraftApi.DomainServices.RepositoryContracts.csproj": {
                 "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.RepositoryContracts\\WarcraftApi.DomainServices.RepositoryContracts.csproj"
+              },
+              "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Persistance\\WarcraftApi.Infraestructure.Persistance.csproj": {
+                "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Persistance\\WarcraftApi.Infraestructure.Persistance.csproj"
               }
             }
           }
@@ -157,6 +253,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

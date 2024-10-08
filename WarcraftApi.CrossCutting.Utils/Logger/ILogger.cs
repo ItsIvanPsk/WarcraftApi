@@ -1,6 +1,6 @@
 ﻿namespace WarcraftApi.CrossCutting.Utils.Logger;
 
-public interface ILogger
+public interface ILogger<T>
 {
     void Debug(string message);
     void Info(string message);

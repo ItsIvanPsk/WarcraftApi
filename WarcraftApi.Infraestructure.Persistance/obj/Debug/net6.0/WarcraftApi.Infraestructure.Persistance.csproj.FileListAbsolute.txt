@@ -1,0 +1,17 @@
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\bin\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.deps.json
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\bin\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.runtimeconfig.json
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\bin\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\bin\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.csproj.AssemblyReference.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.AssemblyInfoInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.AssemblyInfo.cs
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.csproj.CoreCompileInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.csproj.CopyComplete
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\refint\WarcraftApi.Infraestructure.Persistance.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.genruntimeconfig.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\obj\Debug\net6.0\ref\WarcraftApi.Infraestructure.Persistance.dll

@@ -16,8 +16,6 @@ C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.AssemblyInfoInputs.cache
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.AssemblyInfo.cs
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.csproj.CoreCompileInputs.cache
-C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.csproj.Fody.CopyLocal.cache
-C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.csproj.CopyComplete
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.dll
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\obj\Debug\net6.0\refint\WarcraftApi.CrossCutting.Aspects.dll

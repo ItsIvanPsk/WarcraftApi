@@ -14,16 +14,24 @@
         <PackageReference Include="FluentValidation" Version="11.10.0"/>
         <PackageReference Include="log4net" Version="3.0.1"/>
         <PackageReference Include="Microsoft.AspNet.WebApi.Versioning" Version="5.1.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.33">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4"/>
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.3" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\WarcraftApi.ApplicationServices.Application\WarcraftApi.ApplicationServices.Application.csproj"/>
+        <ProjectReference Include="..\WarcraftApi.CrossCutting.Aspects\WarcraftApi.CrossCutting.Aspects.csproj" />
         <ProjectReference Include="..\WarcraftApi.CrossCutting.Utils\WarcraftApi.CrossCutting.Utils.csproj"/>
         <ProjectReference Include="..\WarcraftApi.DistributedServices.Models\WarcraftApi.DistributedServices.Models.csproj"/>
         <ProjectReference Include="..\WarcraftApi.DomainServices.Domain\WarcraftApi.DomainServices.Domain.csproj"/>
         <ProjectReference Include="..\WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj"/>
+        <ProjectReference Include="..\WarcraftApi.Infraestructure.Persistance\WarcraftApi.Infraestructure.Persistance.csproj" />
         <ProjectReference Include="..\WarcraftApi.Infraestructure.Repository\WarcraftApi.Infraestructure.Repository.csproj" />
     </ItemGroup>
 

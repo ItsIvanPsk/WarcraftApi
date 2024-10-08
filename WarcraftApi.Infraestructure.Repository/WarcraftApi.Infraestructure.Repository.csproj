@@ -8,6 +8,11 @@
 
     <ItemGroup>
         <ProjectReference Include="..\WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj"/>
+        <ProjectReference Include="..\WarcraftApi.Infraestructure.Persistance\WarcraftApi.Infraestructure.Persistance.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />
     </ItemGroup>
 
 </Project>
