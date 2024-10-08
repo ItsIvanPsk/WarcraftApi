@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ofoZqS4pmiOipJJp73XYytA9Hx8Dnq/lf/oKO7Q1EPlws+ljYFAK2QNRlmTq5fI2b705WwRRyylc80cftBv3Sw==",
+  "dgSpecHash": "559ixzfSszxi8mIpqF+GYpGR7Hn/wtz1rtDuLPb4xOHaKUS7CO+Ekdz1cRqL+8OosBOOkbILzoymBk6j7gdlPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.WebApi\\WarcraftApi.DistributedServices.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.WebApi\\WarcraftApi.DistributedServices.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\autofac\\8.1.0\\autofac.8.1.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",

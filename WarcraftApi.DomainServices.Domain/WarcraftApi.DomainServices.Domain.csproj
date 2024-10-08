@@ -7,7 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="AutoMapper" Version="13.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\WarcraftApi.DomainServices.Models\WarcraftApi.DomainServices.Models.csproj"/>
+        <ProjectReference Include="..\WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj"/>
     </ItemGroup>
 
 </Project>

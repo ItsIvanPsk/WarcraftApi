@@ -1,0 +1,11 @@
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\bin\Debug\net6.0\WarcraftApi.CrossCutting.Models.deps.json
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\bin\Debug\net6.0\WarcraftApi.CrossCutting.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\bin\Debug\net6.0\WarcraftApi.CrossCutting.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\obj\Debug\net6.0\WarcraftApi.CrossCutting.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\obj\Debug\net6.0\WarcraftApi.CrossCutting.Models.AssemblyInfoInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\obj\Debug\net6.0\WarcraftApi.CrossCutting.Models.AssemblyInfo.cs
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\obj\Debug\net6.0\WarcraftApi.CrossCutting.Models.csproj.CoreCompileInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\obj\Debug\net6.0\WarcraftApi.CrossCutting.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\obj\Debug\net6.0\refint\WarcraftApi.CrossCutting.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\obj\Debug\net6.0\WarcraftApi.CrossCutting.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Models\obj\Debug\net6.0\ref\WarcraftApi.CrossCutting.Models.dll

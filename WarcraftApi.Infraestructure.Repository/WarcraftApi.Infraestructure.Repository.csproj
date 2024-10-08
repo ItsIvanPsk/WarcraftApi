@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj" />
+        <ProjectReference Include="..\WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj"/>
     </ItemGroup>
 
 </Project>

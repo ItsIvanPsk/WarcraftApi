@@ -1,5 +1,4 @@
-﻿
-namespace WarcraftApi.DistributedServices.Models;
+﻿namespace WarcraftApi.DistributedServices.Models;
 
 public class CharacterDto
 {

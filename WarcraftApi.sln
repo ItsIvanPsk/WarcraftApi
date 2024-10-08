@@ -37,6 +37,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.Infraestructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.DomainServices.RepositoryContracts", "WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj", "{68C5F024-23A1-49A4-9E3E-93CC46B77645}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.DistributedServices.WebApi.Unit.Tests", "WarcraftApi.DistributedServices.WebApi.Unit.Tests\WarcraftApi.DistributedServices.WebApi.Unit.Tests.csproj", "{71888DF0-FCE1-4BCB-B097-0FCABD2E27C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.ApplicationServices.Application.Unit.Tests", "WarcraftApi.ApplicationServices.Application.Unit.Tests\WarcraftApi.ApplicationServices.Application.Unit.Tests.csproj", "{70C439D6-4770-4495-87A6-C3D38DFF25DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.DomainServices.Domain.Unit.Tests", "WarcraftApi.DomainServices.Domain.Unit.Tests\WarcraftApi.DomainServices.Domain.Unit.Tests.csproj", "{0BAAE59F-E9F6-4C33-A0CF-05CB17329966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftApi.Infraestructure.Repository.Unit.Tests", "WarcraftApi.Infraestructure.Repository.Unit.Tests\WarcraftApi.Infraestructure.Repository.Unit.Tests.csproj", "{B53BD208-8029-4B69-A619-0EE5873C0DFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +95,22 @@ Global
 		{68C5F024-23A1-49A4-9E3E-93CC46B77645}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68C5F024-23A1-49A4-9E3E-93CC46B77645}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68C5F024-23A1-49A4-9E3E-93CC46B77645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71888DF0-FCE1-4BCB-B097-0FCABD2E27C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71888DF0-FCE1-4BCB-B097-0FCABD2E27C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71888DF0-FCE1-4BCB-B097-0FCABD2E27C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71888DF0-FCE1-4BCB-B097-0FCABD2E27C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C439D6-4770-4495-87A6-C3D38DFF25DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C439D6-4770-4495-87A6-C3D38DFF25DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C439D6-4770-4495-87A6-C3D38DFF25DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C439D6-4770-4495-87A6-C3D38DFF25DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BAAE59F-E9F6-4C33-A0CF-05CB17329966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAAE59F-E9F6-4C33-A0CF-05CB17329966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAAE59F-E9F6-4C33-A0CF-05CB17329966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAAE59F-E9F6-4C33-A0CF-05CB17329966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53BD208-8029-4B69-A619-0EE5873C0DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53BD208-8029-4B69-A619-0EE5873C0DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53BD208-8029-4B69-A619-0EE5873C0DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53BD208-8029-4B69-A619-0EE5873C0DFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,5 +130,9 @@ Global
 		{33E991CE-FDB2-4731-A82D-B7CAFDD6046C} = {668CFBE0-1BFA-4167-A38F-1F1A8C720779}
 		{9CD5B2C6-9944-4F7C-9436-2DF148B2B56E} = {668CFBE0-1BFA-4167-A38F-1F1A8C720779}
 		{68C5F024-23A1-49A4-9E3E-93CC46B77645} = {6FAF66BB-F664-4398-ACB3-66C6D724FCF0}
+		{71888DF0-FCE1-4BCB-B097-0FCABD2E27C4} = {4154C900-4D99-4569-8FDB-2C2A5404B6DD}
+		{70C439D6-4770-4495-87A6-C3D38DFF25DE} = {4154C900-4D99-4569-8FDB-2C2A5404B6DD}
+		{0BAAE59F-E9F6-4C33-A0CF-05CB17329966} = {4154C900-4D99-4569-8FDB-2C2A5404B6DD}
+		{B53BD208-8029-4B69-A619-0EE5873C0DFA} = {4154C900-4D99-4569-8FDB-2C2A5404B6DD}
 	EndGlobalSection
 EndGlobal

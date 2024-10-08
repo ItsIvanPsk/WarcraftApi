@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kke+lx1Ct1QbHxKaSrlsW7gyFGFIEMoZcGOWEWFpKC/1MJ6o50l+q03DwyRNChuuXecXarKX1qwquOM2Wnn3xg==",
+  "dgSpecHash": "RaO6bteWe8r8VZhVqL+lXuKCVl/ltqPqDkP4POitvaSaqJlSwyBAadwOLHpxpl4tlUoXljpK1lucbjR8Lm6nEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj",
+  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "putQiEE3q3IUiViuvabKgnnZ5yEViysna652fU58ij4S8Vp2YueEEXi6FMJAvECnUFraBja++9LRz8p2rOatlw==",
+  "dgSpecHash": "NVQomlHbBP2qR0Tr95LlC4dYr+e5iuOSBy/nHC31uGy9ZNf1KQnFscm7oFrciKbkxo9LdkP9AQjgWZRKDDqpWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj",
+  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

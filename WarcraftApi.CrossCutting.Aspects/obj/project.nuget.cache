@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z0DQuh0Xh7NvrLI/JGYKhuVG3WezsLZcjhTaESVO27V+q47ujWWTCVvzMxkjslWkWWx7gaLXGE/Jg6b3s3ZqiQ==",
+  "dgSpecHash": "vJLNIvXj8gXkiFc/5zVgGHN7jwNMRllV65XT/dlb7Tu2GGIGXw8WAAV1dHXU1zdsVl+rfv2fhuq443qW5Eco8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Aspects\\WarcraftApi.CrossCutting.Aspects.csproj",
+  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Aspects\\WarcraftApi.CrossCutting.Aspects.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\fody\\6.7.0\\fody.6.7.0.nupkg.sha512",
