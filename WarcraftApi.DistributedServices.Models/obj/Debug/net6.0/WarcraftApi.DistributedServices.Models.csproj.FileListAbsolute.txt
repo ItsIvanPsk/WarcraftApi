@@ -1,0 +1,11 @@
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.deps.json
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\WarcraftApi.DistributedServices.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\WarcraftApi.DistributedServices.Models.AssemblyInfoInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\WarcraftApi.DistributedServices.Models.AssemblyInfo.cs
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\WarcraftApi.DistributedServices.Models.csproj.CoreCompileInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\WarcraftApi.DistributedServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\refint\WarcraftApi.DistributedServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\WarcraftApi.DistributedServices.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\ref\WarcraftApi.DistributedServices.Models.dll

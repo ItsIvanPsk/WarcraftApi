@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj": {}
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj": {
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj",
         "projectName": "WarcraftApi.CrossCutting.Models",
-        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj",
+        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Models\\WarcraftApi.CrossCutting.Models.csproj",
         "packagesPath": "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Models\\obj\\",
+        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ItsIvanPsk\\AppData\\Roaming\\NuGet\\NuGet.Config",

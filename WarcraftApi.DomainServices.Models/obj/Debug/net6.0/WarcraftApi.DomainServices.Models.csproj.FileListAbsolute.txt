@@ -1,0 +1,11 @@
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\bin\Debug\net6.0\WarcraftApi.DomainServices.Models.deps.json
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\bin\Debug\net6.0\WarcraftApi.DomainServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\bin\Debug\net6.0\WarcraftApi.DomainServices.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\obj\Debug\net6.0\WarcraftApi.DomainServices.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\obj\Debug\net6.0\WarcraftApi.DomainServices.Models.AssemblyInfoInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\obj\Debug\net6.0\WarcraftApi.DomainServices.Models.AssemblyInfo.cs
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\obj\Debug\net6.0\WarcraftApi.DomainServices.Models.csproj.CoreCompileInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\obj\Debug\net6.0\WarcraftApi.DomainServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\obj\Debug\net6.0\refint\WarcraftApi.DomainServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\obj\Debug\net6.0\WarcraftApi.DomainServices.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\obj\Debug\net6.0\ref\WarcraftApi.DomainServices.Models.dll

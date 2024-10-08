@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WarcraftApi.Infraestructure.Repository/1.0.0": {
+        "dependencies": {
+          "WarcraftApi.DomainServices.RepositoryContracts": "1.0.0"
+        },
+        "runtime": {
+          "WarcraftApi.Infraestructure.Repository.dll": {}
+        }
+      },
+      "WarcraftApi.DomainServices.RepositoryContracts/1.0.0": {
+        "dependencies": {
+          "WarcraftApi.Infraestructure.Models": "1.0.0"
+        },
+        "runtime": {
+          "WarcraftApi.DomainServices.RepositoryContracts.dll": {}
+        }
+      },
+      "WarcraftApi.Infraestructure.Models/1.0.0": {
+        "runtime": {
+          "WarcraftApi.Infraestructure.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WarcraftApi.Infraestructure.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WarcraftApi.DomainServices.RepositoryContracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WarcraftApi.Infraestructure.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

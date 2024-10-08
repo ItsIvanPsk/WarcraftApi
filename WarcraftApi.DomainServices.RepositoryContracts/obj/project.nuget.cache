@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "guPqILbfgO7dCZodvDsSnXaXmklOKRZLtN/PEWWnQNLpzSg96od2pFwx9wXfTLtuct7A9hUB1odM21zMzx3r0A==",
+  "dgSpecHash": "Mz58Kbj1fd/7l9XqakaTbY1VYBJxcGXBJVrud01riUmNDBSCTbAbViuACCNALp2wXlCuetKnNTycP0jJ+osmvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.RepositoryContracts\\WarcraftApi.DomainServices.RepositoryContracts.csproj",
+  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.RepositoryContracts\\WarcraftApi.DomainServices.RepositoryContracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

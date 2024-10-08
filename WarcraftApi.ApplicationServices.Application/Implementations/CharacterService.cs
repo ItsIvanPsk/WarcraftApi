@@ -1,20 +1,39 @@
-﻿using WarcraftApi.ApplicationServices.Application.Contracts;
+﻿using AutoMapper;
+using WarcraftApi.ApplicationServices.Application.Contracts;
 using WarcraftApi.DistributedServices.Models;
 using WarcraftApi.DomainServices.Domain;
+using WarcraftApi.DomainServices.Domain.Contracts;
+using WarcraftApi.DomainServices.Domain.Implementations;
 
 namespace WarcraftApi.ApplicationServices.Application.Implementations;
 
 public class CharacterService : ICharacterService
 {
-    private ICharacterDomain CharacterDomain { get; set; }
+    private readonly ICharacterDomain _characterDomain;
+    private readonly IMapper _mapper;
 
-    public CharacterService(ICharacterDomain characterDomain)
+    public CharacterService(ICharacterDomain characterDomain, IMapper mapper)
     {
-        this.CharacterDomain = characterDomain;
+        _characterDomain = characterDomain;
+        _mapper = mapper;
     }
-    
-    public Task<List<CharacterDto>> GetCharacters()
+
+
+    public async Task<List<CharacterDto>> GetCharacters()
     {
-        throw new NotImplementedException();
+        var result = await _characterDomain.GetCharacters();
+        return _mapper.Map<List<CharacterDto>>(result);
+    }
+
+    public async Task<CharacterDto> GetCharacterDetailById(int id)
+    {
+        var result = await _characterDomain.GetCharacterDetailById(id);
+        return _mapper.Map<CharacterDto>(result);
+    }
+
+    public async Task<CharacterDto> GetCharacterDetailByName(string name)
+    {
+        var result = await _characterDomain.GetCharacterDetailByName(name);
+        return _mapper.Map<CharacterDto>(result);
     }
 }

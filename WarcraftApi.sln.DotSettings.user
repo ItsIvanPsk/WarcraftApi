@@ -1,4 +1,32 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/ShowAdvancedOptions/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=62A31C79_002D1C4B_002D4E78_002D93E3_002DC390E894C016/@EntryIndexedValue">WarcraftApi.DistributedServices.WebApi.Unit.Tests</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=845155AA_002D26C3_002D4039_002DA16D_002D3B9C907C63C6/@EntryIndexedValue">WarcraftApi.ApplicationServices.Application.Unit.Tests</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=8EA46045_002DF303_002D466C_002D9024_002D443AB981EE6D/@EntryIndexedValue">WarcraftApi.DomainServices.Domain.Unit.Tests</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=9CD5B2C6_002D9944_002D4F7C_002D9436_002D2DF148B2B56E/@EntryIndexedValue">WarcraftApi.Infraestructure.Repository.Unit.Tests</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=NUnit3x/@EntryIndexedValue">db4927dd-2e12-48a7-9a84-2b7e3e31b9c8</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba470144_002D8ceb_002D4e0c_002D93db_002D7623a6a54d49/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CharacterControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;And&gt;&#xD;
+      &lt;TestAncestor&gt;&#xD;
+        &lt;TestId&gt;NUnit3x::71888DF0-FCE1-4BCB-B097-0FCABD2E27C4::net6.0::WarcraftApi.DistributedServices.WebApi.Unit.Tests.Controllers.CharacterControllerTests&lt;/TestId&gt;&#xD;
+        &lt;TestId&gt;NUnit3x::70C439D6-4770-4495-87A6-C3D38DFF25DE::net6.0::WarcraftApi.ApplicationServices.Application.Unit.Tests.Implementations.CharacterServiceTests.GetAllCharacters_ThrowsException_WhenServiceFails&lt;/TestId&gt;&#xD;
+        &lt;TestId&gt;NUnit3x::0BAAE59F-E9F6-4C33-A0CF-05CB17329966::net6.0::WarcraftApi.DomainServices.Domain.Unit.Tests.Implementations.CharacterServiceTests&lt;/TestId&gt;&#xD;
+        &lt;TestId&gt;NUnit3x::B53BD208-8029-4B69-A619-0EE5873C0DFA::net6.0::WarcraftApi.Infraestructure.Repository.Unit.Tests.Implementations.CharacterRepositoryTests.GetCharacters_ReturnsCharacterDmList&lt;/TestId&gt;&#xD;
+        &lt;TestId&gt;NUnit3x::B53BD208-8029-4B69-A619-0EE5873C0DFA::net6.0::WarcraftApi.Infraestructure.Repository.Unit.Tests.Implementations.CharacterRepositoryTests.GetCharacterDetailByName_ReturnsCharacterDm&lt;/TestId&gt;&#xD;
+      &lt;/TestAncestor&gt;&#xD;
+      &lt;Not&gt;&#xD;
+        &lt;Project Location="C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository.Unit.Tests" Presentation="&amp;lt;0-Tests&amp;gt;\&amp;lt;WarcraftApi.Infraestructure.Repository.Unit.Tests&amp;gt;" /&gt;&#xD;
+      &lt;/Not&gt;&#xD;
+    &lt;/And&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::B53BD208-8029-4B69-A619-0EE5873C0DFA::net6.0::WarcraftApi.Infraestructure.Repository.Unit.Tests.Implementations.CharacterRepositoryTests.GetCharacters_ReturnsCharacterDmList(System.Collections.Generic.List`1[WarcraftApi.Infraestructure.Models.CharacterDm]) [3]&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::B53BD208-8029-4B69-A619-0EE5873C0DFA::net6.0::WarcraftApi.Infraestructure.Repository.Unit.Tests.Implementations.CharacterRepositoryTests.GetCharacters_ReturnsCharacterDmList&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::B53BD208-8029-4B69-A619-0EE5873C0DFA::net6.0::WarcraftApi.Infraestructure.Repository.Unit.Tests.Implementations.CharacterRepositoryTests.GetCharacters_ReturnsCharacterDmList(System.Collections.Generic.List`1[WarcraftApi.Infraestructure.Models.CharacterDm])&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::B53BD208-8029-4B69-A619-0EE5873C0DFA::net6.0::WarcraftApi.Infraestructure.Repository.Unit.Tests.Implementations.CharacterRepositoryTests.GetCharacters_ReturnsCharacterDmList(System.Collections.Generic.List`1[WarcraftApi.Infraestructure.Models.CharacterDm]) [2]&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=1_002DDistributedServices_002FWarcraftApi_002EDistributedServices_002EWebApi_002FProperties_002FResources/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=5_002DCrossCutting_002FWarcraftApi_002ECrossCutting_002EAspects_002FResources/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wa4rXjxtkHdv9WcPSGjPZnlpymnBJrFr6nti8zZKM/c=",
+  "Source": "WarcraftApi.DistributedServices.WebApi",
+  "BasePath": "_content/WarcraftApi.DistributedServices.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

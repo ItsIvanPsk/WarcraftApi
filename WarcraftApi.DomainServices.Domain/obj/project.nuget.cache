@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BI/ykkO0CpWTfiD9lKxq8OVLlrG01K/adn9J2iW6OsyGA6rr2OzFm2JysK29HwdPxLXYxmcn/h5h1APSXzo/WQ==",
+  "dgSpecHash": "MqX9xvrMirUm7EaxHYjU0cTnurW7zDIjfwWvnnEJ3hgks+ts4JJbTqgptnhjLf3inHP1hUCs/Ia9V0Hx8nrz1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Domain\\WarcraftApi.DomainServices.Domain.csproj",
+  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Domain\\WarcraftApi.DomainServices.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

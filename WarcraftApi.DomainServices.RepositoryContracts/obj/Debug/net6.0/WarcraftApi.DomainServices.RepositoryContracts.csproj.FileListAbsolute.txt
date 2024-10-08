@@ -1,0 +1,15 @@
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.deps.json
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.csproj.AssemblyReference.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.AssemblyInfoInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.AssemblyInfo.cs
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.csproj.CoreCompileInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.csproj.CopyComplete
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\refint\WarcraftApi.DomainServices.RepositoryContracts.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\obj\Debug\net6.0\ref\WarcraftApi.DomainServices.RepositoryContracts.dll

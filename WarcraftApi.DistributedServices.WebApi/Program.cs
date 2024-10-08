@@ -4,10 +4,12 @@ using WarcraftApi.ApplicationServices.Application.Implementations;
 using WarcraftApi.CrossCutting.Utils.Logger;
 using WarcraftApi.CrossCutting.Utils.Mapper;
 using WarcraftApi.DistributedServices.WebApi.Contracts;
+using WarcraftApi.DistributedServices.WebApi.Controllers;
 using WarcraftApi.DomainServices.Domain;
+using WarcraftApi.DomainServices.Domain.Contracts;
 using WarcraftApi.DomainServices.Domain.Implementations;
 using WarcraftApi.DomainServices.RepositoryContracts;
-using WarcraftServices.Infraestructure.Repository.Contracts;
+using WarcraftApi.Infraestructure.Repository.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,21 +22,18 @@ builder.Services.AddSwaggerGen();
 
 // Contracts
 // ------------------------------------------------------------------------------------------------
-builder.Services.AddScoped<ICharacterController, ICharacterController>();
+builder.Services.AddScoped<ICharacterController, CharacterController>();
 
 builder.Services.AddScoped<ICharacterService, CharacterService>();
-    
+
 builder.Services.AddScoped<ICharacterDomain, CharacterDomain>();
 
-builder.Services.AddScoped<ICharacterRepository, ICharacterRepository>();
+builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
 
 // Mapper Configurator
 // ------------------------------------------------------------------------------------------------
-var mappingConfig = new MapperConfiguration(mc =>
-{
-    mc.AddProfile(new MappingProfile());
-});
-IMapper mapper = mappingConfig.CreateMapper();
+var mappingConfig = new MapperConfiguration(mc => { mc.AddProfile(new MappingProfile()); });
+var mapper = mappingConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
 // ILog (Log4Net) Configurator
@@ -52,8 +51,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-
 
 app.UseAuthorization();
 

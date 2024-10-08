@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj": {}
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj": {
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj",
+        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj",
         "projectName": "WarcraftApi.CrossCutting.Utils",
-        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj",
+        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj",
         "packagesPath": "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Utils\\obj\\",
+        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ItsIvanPsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj": {
-                "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj"
+              "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj": {
+                "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj"
               },
-              "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj": {
-                "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj"
+              "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj": {
+                "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj"
               },
-              "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {
-                "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj"
+              "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {
+                "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj": {
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj",
         "projectName": "WarcraftApi.DistributedServices.Models",
-        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj",
+        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj",
         "packagesPath": "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\obj\\",
+        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ItsIvanPsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -134,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj": {
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj",
         "projectName": "WarcraftApi.DomainServices.Models",
-        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj",
+        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Models\\WarcraftApi.DomainServices.Models.csproj",
         "packagesPath": "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Models\\obj\\",
+        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ItsIvanPsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -189,14 +189,14 @@
         }
       }
     },
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj",
         "projectName": "WarcraftApi.Infraestructure.Models",
-        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj",
+        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj",
         "packagesPath": "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\obj\\",
+        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ItsIvanPsk\\AppData\\Roaming\\NuGet\\NuGet.Config",

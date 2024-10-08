@@ -7,14 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AutoMapper" Version="13.0.1" />
-      <PackageReference Include="log4net" Version="3.0.1" />
+        <PackageReference Include="AutoMapper" Version="13.0.1"/>
+        <PackageReference Include="log4net" Version="3.0.1"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\WarcraftApi.DistributedServices.Models\WarcraftApi.DistributedServices.Models.csproj" />
-      <ProjectReference Include="..\WarcraftApi.DomainServices.Models\WarcraftApi.DomainServices.Models.csproj" />
-      <ProjectReference Include="..\WarcraftApi.Infraestructure.Models\WarcraftApi.Infraestructure.Models.csproj" />
+        <ProjectReference Include="..\WarcraftApi.DistributedServices.Models\WarcraftApi.DistributedServices.Models.csproj"/>
+        <ProjectReference Include="..\WarcraftApi.DomainServices.Models\WarcraftApi.DomainServices.Models.csproj"/>
+        <ProjectReference Include="..\WarcraftApi.Infraestructure.Models\WarcraftApi.Infraestructure.Models.csproj"/>
     </ItemGroup>
 
 </Project>

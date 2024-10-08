@@ -451,7 +451,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AutoMapper": "13.0.1"
+          "AutoMapper": "13.0.1",
+          "WarcraftApi.DomainServices.Models": "1.0.0",
+          "WarcraftApi.DomainServices.RepositoryContracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WarcraftApi.DomainServices.Domain.dll": {}
@@ -491,6 +493,19 @@
         },
         "runtime": {
           "bin/placeholder/WarcraftApi.Infraestructure.Models.dll": {}
+        }
+      },
+      "WarcraftApi.Infraestructure.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "WarcraftApi.DomainServices.RepositoryContracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WarcraftApi.Infraestructure.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WarcraftApi.Infraestructure.Repository.dll": {}
         }
       }
     }
@@ -1414,6 +1429,11 @@
       "type": "project",
       "path": "../WarcraftApi.Infraestructure.Models/WarcraftApi.Infraestructure.Models.csproj",
       "msbuildProject": "../WarcraftApi.Infraestructure.Models/WarcraftApi.Infraestructure.Models.csproj"
+    },
+    "WarcraftApi.Infraestructure.Repository/1.0.0": {
+      "type": "project",
+      "path": "../WarcraftApi.Infraestructure.Repository/WarcraftApi.Infraestructure.Repository.csproj",
+      "msbuildProject": "../WarcraftApi.Infraestructure.Repository/WarcraftApi.Infraestructure.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1429,6 +1449,7 @@
       "WarcraftApi.DistributedServices.Models >= 1.0.0",
       "WarcraftApi.DomainServices.Domain >= 1.0.0",
       "WarcraftApi.DomainServices.RepositoryContracts >= 1.0.0",
+      "WarcraftApi.Infraestructure.Repository >= 1.0.0",
       "log4net >= 3.0.1"
     ]
   },
@@ -1438,11 +1459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.WebApi\\WarcraftApi.DistributedServices.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.WebApi\\WarcraftApi.DistributedServices.WebApi.csproj",
       "projectName": "WarcraftApi.DistributedServices.WebApi",
-      "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.WebApi\\WarcraftApi.DistributedServices.WebApi.csproj",
+      "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.WebApi\\WarcraftApi.DistributedServices.WebApi.csproj",
       "packagesPath": "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ItsIvanPsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1459,20 +1480,23 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.ApplicationServices.Application\\WarcraftApi.ApplicationServices.Application.csproj": {
-              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.ApplicationServices.Application\\WarcraftApi.ApplicationServices.Application.csproj"
+            "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.ApplicationServices.Application\\WarcraftApi.ApplicationServices.Application.csproj": {
+              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.ApplicationServices.Application\\WarcraftApi.ApplicationServices.Application.csproj"
             },
-            "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj": {
-              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj"
+            "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj": {
+              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj"
             },
-            "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj": {
-              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj"
+            "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj": {
+              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj"
             },
-            "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Domain\\WarcraftApi.DomainServices.Domain.csproj": {
-              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.Domain\\WarcraftApi.DomainServices.Domain.csproj"
+            "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Domain\\WarcraftApi.DomainServices.Domain.csproj": {
+              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.Domain\\WarcraftApi.DomainServices.Domain.csproj"
             },
-            "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.RepositoryContracts\\WarcraftApi.DomainServices.RepositoryContracts.csproj": {
-              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.DomainServices.RepositoryContracts\\WarcraftApi.DomainServices.RepositoryContracts.csproj"
+            "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.RepositoryContracts\\WarcraftApi.DomainServices.RepositoryContracts.csproj": {
+              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DomainServices.RepositoryContracts\\WarcraftApi.DomainServices.RepositoryContracts.csproj"
+            },
+            "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Repository\\WarcraftApi.Infraestructure.Repository.csproj": {
+              "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Repository\\WarcraftApi.Infraestructure.Repository.csproj"
             }
           }
         }

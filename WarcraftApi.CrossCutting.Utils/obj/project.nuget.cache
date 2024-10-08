@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x0QSkhpw2xKOys68jKsnZ+6elCjq9xkYo1sLoOeuFL8g2bL241DagQ8IZn4AGR/YsJ/NvIp51KmJRhmWTJtoqQ==",
+  "dgSpecHash": "mcCjMx2+Uifl6zaEfj7OX2F2kmUczoMax9QagRkeDdLUsTYepXyWge+f73GkfLpxWU0Y9/W3R9jfWM/8bQsElQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj",
+  "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Utils\\WarcraftApi.CrossCutting.Utils.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\log4net\\3.0.1\\log4net.3.0.1.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {}
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {
+    "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj",
         "projectName": "WarcraftApi.Infraestructure.Models",
-        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj",
+        "projectPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\WarcraftApi.Infraestructure.Models.csproj",
         "packagesPath": "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\WarcraftApi\\WarcraftApi.Infraestructure.Models\\obj\\",
+        "outputPath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.Infraestructure.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ItsIvanPsk\\AppData\\Roaming\\NuGet\\NuGet.Config",

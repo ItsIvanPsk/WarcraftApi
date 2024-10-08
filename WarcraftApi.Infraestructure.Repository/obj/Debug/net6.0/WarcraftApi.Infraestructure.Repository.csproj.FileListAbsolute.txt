@@ -1,0 +1,17 @@
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Repository.deps.json
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Repository.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Repository.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.csproj.AssemblyReference.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.AssemblyInfoInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.AssemblyInfo.cs
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.csproj.CopyComplete
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\refint\WarcraftApi.Infraestructure.Repository.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\ref\WarcraftApi.Infraestructure.Repository.dll
