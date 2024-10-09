@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
 using WarcraftApi.ApplicationServices.Application.Contracts;
+using WarcraftApi.CrossCutting.Utils.Logger;
 using WarcraftApi.DistributedServices.Models;
 using WarcraftApi.DistributedServices.WebApi.Controllers;
 using WarcraftApi.DistributedServices.WebApi.Unit.Tests.TestData;
@@ -15,14 +16,22 @@ namespace WarcraftApi.DistributedServices.WebApi.Unit.Tests.Controllers;
 public class CharacterControllerTests
 {
     private CharacterController _controller;
+    private ILoggerService _loggerMock;
     private Mock<ICharacterService> _characterServiceMock;
 
     [SetUp]
     public void SetUp()
     {
         _characterServiceMock = new Mock<ICharacterService>();
-        _controller = new CharacterController(_characterServiceMock.Object);
+
+        var loggerMock = new Mock<ILoggerService>();
+        _loggerMock = loggerMock.Object;
+
+        LoggerProvider.SetLogger(_loggerMock);
+
+        _controller = new CharacterController(_characterServiceMock.Object, _loggerMock);
     }
+
 
     [Test]
     [TestCaseSource(typeof(CharacterControllerTestData), nameof(CharacterControllerTestData.GetCharacterDetailDto))]
