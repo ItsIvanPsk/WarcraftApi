@@ -1,58 +1,49 @@
-﻿using System.Reflection;
-using log4net;
-using log4net.Config;
+﻿using Serilog;
 
 namespace WarcraftApi.CrossCutting.Utils.Logger
 {
-    public class Logger<T> : ILogger<T>
+    public class Logger : ILoggerService
     {
-        private readonly ILog _logger;
+        private readonly ILogger _logger = Log.Logger;
 
-        public Logger()
+        public void LogDebug(string message)
         {
-            _logger = LogManager.GetLogger(typeof(T).FullName);
-            ConfigureLog4Net();
+            _logger.Debug(message);
         }
 
-        private static void ConfigureLog4Net()
+        public void LogInformation(string? message)
         {
-            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly() ?? throw new InvalidOperationException());
-            var log4NetConfig = new FileInfo("log4net.config");
-
-            if (log4NetConfig.Exists)
-                XmlConfigurator.Configure(logRepository, log4NetConfig);
-            else
-                throw new FileNotFoundException("No se encontró el archivo log4net.config.");
+            _logger.Information(message);
         }
 
-        public void Debug(string message)
+        public void LogWarning(string message)
         {
-            if (_logger.IsDebugEnabled)
-                _logger.Debug(message);
+            _logger.Warning(message);
         }
 
-        public void Info(string message)
+        public void LogError(string message, Exception? ex = null)
         {
-            if (_logger.IsInfoEnabled)
-                _logger.Info(message);
-        }
-
-        public void Warn(string message)
-        {
-            if (_logger.IsWarnEnabled)
-                _logger.Warn(message);
-        }
-
-        public void Error(string message)
-        {
-            if (_logger.IsErrorEnabled)
+            if (ex == null)
+            {
                 _logger.Error(message);
+            }
+            else
+            {
+                _logger.Error(ex, message);
+            }
         }
 
-        public void Fatal(string message)
+        public void LogCritical(string message, Exception? ex = null)
         {
-            if (_logger.IsFatalEnabled)
+            if (ex == null)
+            {
                 _logger.Fatal(message);
+            }
+            else
+            {
+                _logger.Fatal(ex, message);
+            }
         }
     }
+
 }
