@@ -1,0 +1,37 @@
+﻿version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
+      MYSQL_DATABASE: WarcraftApi 
+      MYSQL_USER: warcraft_user
+      MYSQL_PASSWORD: P@ssw0rd
+    ports:
+      - "5555:3306"
+    volumes:
+      - db_data:/var/lib/mysql  
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql 
+    networks:
+      - warcraft_net
+
+  webapi:
+    build: .
+    container_name: warcraft_api
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__MySQLDatabase: "Server=mysql_db;Database=WarcraftApi;User=warcraft_user;Password=P@ssw0rd;"
+    networks:
+      - warcraft_net
+
+volumes:
+  db_data:
+
+networks:
+  warcraft_net:
