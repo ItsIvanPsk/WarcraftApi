@@ -1,0 +1,483 @@
+2024-10-10 14:31:41.089 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-10 14:31:41.133 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-10 14:31:41.139 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-10 14:31:41.140 +02:00 [INF] Hosting environment: Development
+2024-10-10 14:31:41.141 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-10 14:31:41.566 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-10 14:31:41.813 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 250.5228ms
+2024-10-10 14:31:41.950 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-10 14:31:42.035 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.0252ms
+2024-10-10 14:31:49.894 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_all_characters - -
+2024-10-10 14:31:49.914 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:31:49.944 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters() on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:31:50.569 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 14:31:50.578 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 
+2024-10-10 14:31:51.264 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 14:31:51.534 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 953 ms
+2024-10-10 14:31:51.535 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-10 14:31:51.638 +02:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+2024-10-10 14:31:51.735 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'WarcraftApi.Infraestructure.Persistance.ApplicationDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Single'.
+   at MySqlConnector.Core.Row.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 421
+   at MySqlConnector.MySqlDataReader.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 296
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Single'.
+   at MySqlConnector.Core.Row.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 421
+   at MySqlConnector.MySqlDataReader.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 296
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-10-10 14:31:51.789 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 1837.8505ms
+2024-10-10 14:31:51.792 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:31:51.803 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Single'.
+   at MySqlConnector.Core.Row.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 421
+   at MySqlConnector.MySqlDataReader.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 296
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at WarcraftApi.Infraestructure.Repository.Implementations.CharacterRepository.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\Implementations\CharacterRepository.cs:line 22
+   at WarcraftApi.DomainServices.Domain.Implementations.CharacterDomain.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\Implementations\CharacterDomain.cs:line 21
+   at WarcraftApi.ApplicationServices.Application.Implementations.CharacterService.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\Implementations\CharacterService.cs:line 24
+   at WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\Controllers\CharacterController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-10-10 14:31:51.872 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_all_characters - - - 500 - text/plain;+charset=utf-8 1977.7161ms
+2024-10-10 14:33:55.838 +02:00 [INF] Application is shutting down...
+2024-10-10 14:34:02.564 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-10 14:34:02.607 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-10 14:34:02.612 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-10 14:34:02.613 +02:00 [INF] Hosting environment: Development
+2024-10-10 14:34:02.614 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-10 14:34:02.842 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-10 14:34:03.104 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 265.6005ms
+2024-10-10 14:34:03.258 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-10 14:34:03.335 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.1600ms
+2024-10-10 14:34:07.400 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_all_characters - -
+2024-10-10 14:34:07.418 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:34:07.445 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters() on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:34:07.751 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 14:34:07.760 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 
+2024-10-10 14:34:08.368 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 14:34:08.602 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 839 ms
+2024-10-10 14:34:08.603 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-10 14:34:08.680 +02:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+2024-10-10 14:34:08.740 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'WarcraftApi.Infraestructure.Persistance.ApplicationDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Single'.
+   at MySqlConnector.Core.Row.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 421
+   at MySqlConnector.MySqlDataReader.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 296
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Single'.
+   at MySqlConnector.Core.Row.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 421
+   at MySqlConnector.MySqlDataReader.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 296
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-10-10 14:34:08.779 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 1327.2359ms
+2024-10-10 14:34:08.781 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:34:08.790 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Single'.
+   at MySqlConnector.Core.Row.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 421
+   at MySqlConnector.MySqlDataReader.GetFloat(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 296
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at WarcraftApi.Infraestructure.Repository.Implementations.CharacterRepository.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\Implementations\CharacterRepository.cs:line 22
+   at WarcraftApi.DomainServices.Domain.Implementations.CharacterDomain.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\Implementations\CharacterDomain.cs:line 21
+   at WarcraftApi.ApplicationServices.Application.Implementations.CharacterService.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\Implementations\CharacterService.cs:line 24
+   at WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\Controllers\CharacterController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-10-10 14:34:08.824 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_all_characters - - - 500 - text/plain;+charset=utf-8 1424.2378ms
+2024-10-10 14:34:59.353 +02:00 [INF] Application is shutting down...
+2024-10-10 14:36:57.798 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-10 14:36:57.840 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-10 14:36:57.845 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-10 14:36:57.847 +02:00 [INF] Hosting environment: Development
+2024-10-10 14:36:57.847 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-10 14:36:58.133 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-10 14:36:58.375 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 245.5650ms
+2024-10-10 14:36:58.515 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-10 14:36:58.597 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 81.6069ms
+2024-10-10 14:37:01.285 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_all_characters - -
+2024-10-10 14:37:01.306 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:37:01.334 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters() on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:37:01.663 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 14:37:01.672 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 
+2024-10-10 14:37:02.357 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 14:37:02.619 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 944 ms
+2024-10-10 14:37:02.620 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-10 14:37:02.720 +02:00 [ERR] Failed executing DbCommand (130ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+2024-10-10 14:37:02.759 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'WarcraftApi.Infraestructure.Persistance.ApplicationDbContext'.
+MySqlConnector.MySqlException (0x80004005): Unknown column 'c.Lore' in 'field list'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 44
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 127
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 456
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 330
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 323
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Unknown column 'c.Lore' in 'field list'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 44
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 127
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 456
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 330
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 323
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-10-10 14:37:02.782 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 1439.8914ms
+2024-10-10 14:37:02.784 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:37:02.794 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+MySqlConnector.MySqlException (0x80004005): Unknown column 'c.Lore' in 'field list'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 44
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 127
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 456
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 330
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 323
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at WarcraftApi.Infraestructure.Repository.Implementations.CharacterRepository.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\Implementations\CharacterRepository.cs:line 21
+   at WarcraftApi.DomainServices.Domain.Implementations.CharacterDomain.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\Implementations\CharacterDomain.cs:line 21
+   at WarcraftApi.ApplicationServices.Application.Implementations.CharacterService.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\Implementations\CharacterService.cs:line 24
+   at WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\Controllers\CharacterController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-10-10 14:37:02.838 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_all_characters - - - 500 - text/plain;+charset=utf-8 1552.9126ms
+2024-10-10 14:37:23.490 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_all_characters - -
+2024-10-10 14:37:23.492 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:37:23.494 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters() on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:37:23.501 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 14:37:23.502 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 
+2024-10-10 14:37:23.505 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 14:37:23.520 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 17 ms
+2024-10-10 14:37:23.521 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-10 14:37:23.524 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+2024-10-10 14:37:23.555 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'WarcraftApi.Infraestructure.Persistance.ApplicationDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 377
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 287
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 377
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 287
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-10-10 14:37:23.563 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 68.1273ms
+2024-10-10 14:37:23.565 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:37:23.566 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 377
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 287
+   at lambda_method11(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at WarcraftApi.Infraestructure.Repository.Implementations.CharacterRepository.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\Implementations\CharacterRepository.cs:line 21
+   at WarcraftApi.DomainServices.Domain.Implementations.CharacterDomain.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\Implementations\CharacterDomain.cs:line 21
+   at WarcraftApi.ApplicationServices.Application.Implementations.CharacterService.GetCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\Implementations\CharacterService.cs:line 24
+   at WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters() in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\Controllers\CharacterController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-10-10 14:37:23.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_all_characters - - - 500 - text/plain;+charset=utf-8 86.8060ms
+2024-10-10 14:38:02.931 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-10 14:38:02.933 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 1.7336ms
+2024-10-10 14:38:02.978 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-10 14:38:02.980 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.3939ms
+2024-10-10 14:38:06.400 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_id/1 - -
+2024-10-10 14:38:06.401 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:38:06.416 +02:00 [INF] Route matched with {action = "GetCharacterDetailById", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailById(Int32) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:38:06.429 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 14:38:06.431 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailById with parameters: 1
+2024-10-10 14:38:06.526 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 14:38:06.650 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailById
+2024-10-10 14:38:06.673 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+WHERE `c`.`Id` = @__id_0
+LIMIT 1
+2024-10-10 14:38:06.742 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 305.7915ms.
+2024-10-10 14:38:06.754 +02:00 [INF] Executing OkObjectResult, writing value of type 'WarcraftApi.DistributedServices.Models.CharacterDto'.
+2024-10-10 14:38:06.783 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) in 365.2558ms
+2024-10-10 14:38:06.784 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:38:06.785 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_id/1 - - - 200 - application/json;+charset=utf-8 385.6393ms
+2024-10-10 14:38:10.475 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_all_characters - -
+2024-10-10 14:38:10.475 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:38:10.476 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters() on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:38:10.478 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 14:38:10.478 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 
+2024-10-10 14:38:10.479 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 14:38:10.480 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1 ms
+2024-10-10 14:38:10.481 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-10 14:38:10.481 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+2024-10-10 14:38:10.499 +02:00 [INF] System.Collections.Generic.List`1[WarcraftApi.DistributedServices.Models.CharacterDto]
+2024-10-10 14:38:10.500 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.2732ms.
+2024-10-10 14:38:10.501 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-10 14:38:10.504 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 26.8603ms
+2024-10-10 14:38:10.505 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:38:10.505 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_all_characters - - - 200 - application/json;+charset=utf-8 30.9219ms
+2024-10-10 14:40:19.781 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_id/65 - -
+2024-10-10 14:40:19.782 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:40:19.782 +02:00 [INF] Route matched with {action = "GetCharacterDetailById", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailById(Int32) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:40:19.784 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 14:40:19.785 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailById with parameters: 65
+2024-10-10 14:40:19.786 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 14:40:19.790 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailById
+2024-10-10 14:40:19.790 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+WHERE `c`.`Id` = @__id_0
+LIMIT 1
+2024-10-10 14:40:19.798 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) in 14.7557ms
+2024-10-10 14:40:19.799 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:40:19.800 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Character not found.
+   at WarcraftApi.Infraestructure.Repository.Implementations.CharacterRepository.GetCharacterDetailById(Int32 id) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\Implementations\CharacterRepository.cs:line 33
+   at WarcraftApi.DomainServices.Domain.Implementations.CharacterDomain.GetCharacterDetailById(Int32 id) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\Implementations\CharacterDomain.cs:line 27
+   at WarcraftApi.ApplicationServices.Application.Implementations.CharacterService.GetCharacterDetailById(Int32 id) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\Implementations\CharacterService.cs:line 30
+   at WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById(Int32 id) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\Controllers\CharacterController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-10-10 14:40:19.805 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_id/65 - - - 500 - text/plain;+charset=utf-8 23.7240ms
+2024-10-10 14:40:29.955 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_id/-3 - -
+2024-10-10 14:40:29.955 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:40:29.956 +02:00 [INF] Route matched with {action = "GetCharacterDetailById", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailById(Int32) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:40:29.958 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 14:40:29.959 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailById with parameters: -3
+2024-10-10 14:40:29.964 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailById
+2024-10-10 14:40:29.965 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 6.1933ms.
+2024-10-10 14:40:29.966 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[FluentValidation.Results.ValidationFailure, FluentValidation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0]]'.
+2024-10-10 14:40:29.989 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) in 31.4867ms
+2024-10-10 14:40:29.990 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:40:29.990 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_id/-3 - - - 400 - application/json;+charset=utf-8 35.7375ms
+2024-10-10 14:40:46.356 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_name/  - -
+2024-10-10 14:40:46.357 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:40:46.360 +02:00 [INF] Route matched with {action = "GetCharacterDetailByName", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailByName(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 14:40:46.368 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-10-10 14:40:46.374 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) in 12.0631ms
+2024-10-10 14:40:46.375 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 14:40:46.375 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_name/  - - - 400 - application/problem+json;+charset=utf-8 19.4726ms
+2024-10-10 15:01:10.646 +02:00 [INF] Application is shutting down...
+2024-10-10 15:02:51.771 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-10 15:02:51.814 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-10 15:02:51.820 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-10 15:02:51.821 +02:00 [INF] Hosting environment: Development
+2024-10-10 15:02:51.822 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-10 15:02:52.013 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-10 15:02:52.250 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 241.6760ms
+2024-10-10 15:02:52.388 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-10 15:02:52.468 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.2342ms
+2024-10-10 15:02:57.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_all_characters - -
+2024-10-10 15:02:57.123 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:02:57.150 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters() on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 15:02:57.460 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 15:02:57.467 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 
+2024-10-10 15:02:58.106 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 15:02:58.395 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 925 ms
+2024-10-10 15:02:58.396 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-10 15:02:58.488 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+2024-10-10 15:02:58.742 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1270.1566ms.
+2024-10-10 15:02:58.763 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-10 15:02:58.804 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 1646.4215ms
+2024-10-10 15:02:58.807 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:02:58.820 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_all_characters - - - 200 - application/json;+charset=utf-8 1715.3744ms
+2024-10-10 15:03:05.430 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_id/1 - -
+2024-10-10 15:03:05.433 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:05.447 +02:00 [INF] Route matched with {action = "GetCharacterDetailById", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailById(Int32) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 15:03:05.461 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 15:03:05.463 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailById with parameters: 1
+2024-10-10 15:03:05.492 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 15:03:05.631 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailById
+2024-10-10 15:03:05.634 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+WHERE `c`.`Id` = @__id_0
+LIMIT 1
+2024-10-10 15:03:05.641 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 179.1324ms.
+2024-10-10 15:03:05.643 +02:00 [INF] Executing OkObjectResult, writing value of type 'WarcraftApi.DistributedServices.Models.CharacterDto'.
+2024-10-10 15:03:05.645 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) in 196.1783ms
+2024-10-10 15:03:05.646 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:05.647 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_id/1 - - - 200 - application/json;+charset=utf-8 216.9470ms
+2024-10-10 15:03:14.087 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_name/Arthass - -
+2024-10-10 15:03:14.088 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:14.094 +02:00 [INF] Route matched with {action = "GetCharacterDetailByName", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailByName(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 15:03:14.106 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 15:03:14.108 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailByName with parameters: Arthass
+2024-10-10 15:03:14.166 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 15:03:14.176 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailByName
+2024-10-10 15:03:14.179 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+WHERE `c`.`Name` = @__name_0
+LIMIT 1
+2024-10-10 15:03:14.182 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) in 86.6921ms
+2024-10-10 15:03:14.184 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:14.190 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Character not found.
+   at WarcraftApi.Infraestructure.Repository.Implementations.CharacterRepository.GetCharacterDetailByName(String name) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\Implementations\CharacterRepository.cs:line 41
+   at WarcraftApi.DomainServices.Domain.Implementations.CharacterDomain.GetCharacterDetailByName(String name) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\Implementations\CharacterDomain.cs:line 33
+   at WarcraftApi.ApplicationServices.Application.Implementations.CharacterService.GetCharacterDetailByName(String name) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\Implementations\CharacterService.cs:line 36
+   at WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName(String name) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\Controllers\CharacterController.cs:line 65
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-10-10 15:03:14.251 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_name/Arthass - - - 500 - text/plain;+charset=utf-8 164.4788ms
+2024-10-10 15:03:16.862 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_name/  - -
+2024-10-10 15:03:16.863 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:16.865 +02:00 [INF] Route matched with {action = "GetCharacterDetailByName", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailByName(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 15:03:16.870 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-10-10 15:03:16.878 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) in 11.1428ms
+2024-10-10 15:03:16.879 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:16.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_name/  - - - 400 - application/problem+json;+charset=utf-8 17.9007ms
+2024-10-10 15:03:20.599 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_name/Arthas - -
+2024-10-10 15:03:20.600 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:20.601 +02:00 [INF] Route matched with {action = "GetCharacterDetailByName", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailByName(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 15:03:20.604 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 15:03:20.605 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailByName with parameters: Arthas
+2024-10-10 15:03:20.606 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 15:03:20.611 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailByName
+2024-10-10 15:03:20.612 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+WHERE `c`.`Name` = @__name_0
+LIMIT 1
+2024-10-10 15:03:20.615 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) in 12.2167ms
+2024-10-10 15:03:20.616 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:20.617 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Character not found.
+   at WarcraftApi.Infraestructure.Repository.Implementations.CharacterRepository.GetCharacterDetailByName(String name) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\Implementations\CharacterRepository.cs:line 41
+   at WarcraftApi.DomainServices.Domain.Implementations.CharacterDomain.GetCharacterDetailByName(String name) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\Implementations\CharacterDomain.cs:line 33
+   at WarcraftApi.ApplicationServices.Application.Implementations.CharacterService.GetCharacterDetailByName(String name) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\Implementations\CharacterService.cs:line 36
+   at WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName(String name) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\Controllers\CharacterController.cs:line 65
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-10-10 15:03:20.624 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_name/Arthas - - - 500 - text/plain;+charset=utf-8 25.5483ms
+2024-10-10 15:03:35.990 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/characters/get_character_by_name/Arthas Menethil - -
+2024-10-10 15:03:35.991 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:35.992 +02:00 [INF] Route matched with {action = "GetCharacterDetailByName", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailByName(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-10 15:03:35.994 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-10 15:03:35.995 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailByName with parameters: Arthas Menethil
+2024-10-10 15:03:35.996 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-10 15:03:35.997 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailByName
+2024-10-10 15:03:35.998 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+FROM `Characters` AS `c`
+WHERE `c`.`Name` = @__name_0
+LIMIT 1
+2024-10-10 15:03:36.000 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.0908ms.
+2024-10-10 15:03:36.001 +02:00 [INF] Executing OkObjectResult, writing value of type 'WarcraftApi.DistributedServices.Models.CharacterDto'.
+2024-10-10 15:03:36.002 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) in 8.7518ms
+2024-10-10 15:03:36.002 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-10 15:03:36.003 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/characters/get_character_by_name/Arthas Menethil - - - 200 - application/json;+charset=utf-8 12.5963ms
+2024-10-10 15:03:42.916 +02:00 [INF] Application is shutting down...

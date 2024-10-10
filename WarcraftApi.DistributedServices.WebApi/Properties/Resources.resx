@@ -103,4 +103,10 @@
             PublicKeyToken=b77a5c561934e089
         </value>
     </resheader>
+    <data name="ValueCannotBeEmpty" xml:space="preserve">
+        <value>The value cannot be empty.</value>
+    </data>
+    <data name="ValueMustBeGreatherThan0" xml:space="preserve">
+        <value>The value must be greather than 0.</value>
+    </data>
 </root>

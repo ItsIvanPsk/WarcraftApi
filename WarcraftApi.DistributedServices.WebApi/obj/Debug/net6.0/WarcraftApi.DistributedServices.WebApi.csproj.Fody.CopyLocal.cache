@@ -1,0 +1,89 @@
+C:\Users\ItsIvanPsk\.nuget\packages\autofac\8.1.0\lib\net6.0\Autofac.dll
+C:\Users\ItsIvanPsk\.nuget\packages\automapper\13.0.1\lib\net6.0\AutoMapper.dll
+C:\Users\ItsIvanPsk\.nuget\packages\entityframework\6.5.1\lib\netstandard2.1\EntityFramework.SqlServer.dll
+C:\Users\ItsIvanPsk\.nuget\packages\entityframework\6.5.1\lib\netstandard2.1\EntityFramework.dll
+C:\Users\ItsIvanPsk\.nuget\packages\fluentvalidation\11.10.0\lib\net6.0\FluentValidation.dll
+C:\Users\ItsIvanPsk\.nuget\packages\humanizer.core\2.8.26\lib\netstandard2.0\Humanizer.dll
+C:\Users\ItsIvanPsk\.nuget\packages\log4net\3.0.1\lib\netstandard2.0\log4net.dll
+C:\Users\ItsIvanPsk\.nuget\packages\methodboundaryaspect.fody\2.0.149\lib\netstandard2.1\MethodBoundaryAspect.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnet.webapi.client\5.2.3\lib\net45\System.Net.Http.Formatting.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnet.webapi.core\5.2.3\lib\net45\System.Web.Http.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnet.webapi.versioning\5.1.0\lib\net45\Microsoft.AspNet.WebApi.Versioning.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnetcore.mvc.versioning\5.1.0\lib\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.entityframeworkcore\6.0.33\lib\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.entityframeworkcore.abstractions\6.0.33\lib\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.entityframeworkcore.design\6.0.33\lib\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.entityframeworkcore.relational\6.0.33\lib\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.entityframeworkcore.relational.design\1.1.1\lib\netstandard1.3\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.caching.memory\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.configuration.abstractions\8.0.0\lib\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.configuration.binder\8.0.0\lib\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.dependencyinjection\8.0.1\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\8.0.2\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.dependencymodel\8.0.1\lib\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.diagnostics.abstractions\8.0.0\lib\net6.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.fileproviders.abstractions\8.0.0\lib\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.hosting.abstractions\8.0.0\lib\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.logging\8.0.1\lib\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.2\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.options\8.0.2\lib\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.primitives\8.0.0\lib\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.openapi\1.2.3\lib\netstandard2.0\Microsoft.OpenApi.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.win32.systemevents\6.0.0\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ItsIvanPsk\.nuget\packages\mysqlconnector\2.1.2\lib\net6.0\MySqlConnector.dll
+C:\Users\ItsIvanPsk\.nuget\packages\newtonsoft.json\6.0.4\lib\net45\Newtonsoft.Json.dll
+C:\Users\ItsIvanPsk\.nuget\packages\pomelo.entityframeworkcore.mysql\6.0.3\lib\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\ItsIvanPsk\.nuget\packages\pomelo.entityframeworkcore.mysql.design\1.1.2\lib\netstandard1.3\Pomelo.EntityFrameworkCore.MySql.Design.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog\4.0.2\lib\net6.0\Serilog.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog.aspnetcore\8.0.2\lib\net6.0\Serilog.AspNetCore.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog.extensions.hosting\8.0.0\lib\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog.extensions.logging\8.0.0\lib\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog.formatting.compact\2.0.0\lib\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog.settings.configuration\8.0.2\lib\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog.sinks.console\6.0.0\lib\net6.0\Serilog.Sinks.Console.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog.sinks.debug\2.0.0\lib\netstandard2.1\Serilog.Sinks.Debug.dll
+C:\Users\ItsIvanPsk\.nuget\packages\serilog.sinks.file\6.0.0\lib\net6.0\Serilog.Sinks.File.dll
+C:\Users\ItsIvanPsk\.nuget\packages\swashbuckle.aspnetcore.swagger\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ItsIvanPsk\.nuget\packages\swashbuckle.aspnetcore.swaggergen\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ItsIvanPsk\.nuget\packages\swashbuckle.aspnetcore.swaggerui\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.codedom\6.0.0\lib\net6.0\System.CodeDom.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.configuration.configurationmanager\6.0.1\lib\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.data.sqlclient\4.8.6\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.diagnostics.diagnosticsource\8.0.1\lib\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.drawing.common\6.0.0\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.security.cryptography.protecteddata\6.0.0\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.security.permissions\6.0.0\lib\net6.0\System.Security.Permissions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.text.encodings.web\8.0.0\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.text.json\8.0.4\lib\net6.0\System.Text.Json.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.windows.extensions\6.0.0\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.win32.systemevents\6.0.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ItsIvanPsk\.nuget\packages\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\4.4.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ItsIvanPsk\.nuget\packages\runtime.win-x64.runtime.native.system.data.sqlclient.sni\4.4.0\runtimes\win-x64\native\sni.dll
+C:\Users\ItsIvanPsk\.nuget\packages\runtime.win-x86.runtime.native.system.data.sqlclient.sni\4.4.0\runtimes\win-x86\native\sni.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.data.sqlclient\4.8.6\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.data.sqlclient\4.8.6\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.drawing.common\6.0.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.drawing.common\6.0.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.security.cryptography.protecteddata\6.0.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.text.encodings.web\8.0.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\ItsIvanPsk\.nuget\packages\system.windows.extensions\6.0.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\bin\Debug\net6.0\WarcraftApi.ApplicationServices.Application.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\bin\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Utils\bin\Debug\net6.0\WarcraftApi.CrossCutting.Utils.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bin\Debug\net6.0\WarcraftApi.DomainServices.Domain.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\bin\Debug\net6.0\WarcraftApi.DomainServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Models\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\bin\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Repository.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\bin\Debug\net6.0\WarcraftApi.ApplicationServices.Application.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Aspects\bin\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Utils\bin\Debug\net6.0\WarcraftApi.CrossCutting.Utils.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bin\Debug\net6.0\WarcraftApi.DomainServices.Domain.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.RepositoryContracts\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Persistance\bin\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Repository.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Models\bin\Debug\net6.0\WarcraftApi.DomainServices.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Models\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.pdb
