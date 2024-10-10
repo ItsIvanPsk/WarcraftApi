@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fI2t2xX/SB3FcX3IhKWv1MnWu6VlxuIsZIqjUb4U7u2HyNMqPQj9pOFDgTrH4+NYpVed+SIfEBGiaaUZhXr6EQ==",
+  "dgSpecHash": "7v4qmbIKVtx6qR1/ketc7PobeRuiG15/m0/fsHrtHS9XOjbn4K53K2M0JjUhi7gHtwp/CvEHhoFIFJ3LhC6skQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.WebApi.Unit.Tests\\WarcraftApi.DistributedServices.WebApi.Unit.Tests.csproj",
   "expectedPackageFiles": [
@@ -42,7 +42,7 @@
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.net.test.sdk\\17.11.1\\microsoft.net.test.sdk.17.11.1.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.11.1\\microsoft.testplatform.objectmodel.17.11.1.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.testplatform.testhost\\17.11.1\\microsoft.testplatform.testhost.17.11.1.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
@@ -87,8 +87,9 @@
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
-    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
-    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.8.1\\swashbuckle.aspnetcore.annotations.6.8.1.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.8.1\\swashbuckle.aspnetcore.swagger.6.8.1.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.8.1\\swashbuckle.aspnetcore.swaggergen.6.8.1.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",

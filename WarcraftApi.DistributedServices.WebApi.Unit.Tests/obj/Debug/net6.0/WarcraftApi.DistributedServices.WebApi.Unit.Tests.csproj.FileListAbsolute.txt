@@ -194,3 +194,4 @@ C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebA
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi.Unit.Tests\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi.Unit.Tests\bin\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.dll
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi.Unit.Tests\bin\Debug\net6.0\WarcraftApi.CrossCutting.Aspects.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi.Unit.Tests\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll

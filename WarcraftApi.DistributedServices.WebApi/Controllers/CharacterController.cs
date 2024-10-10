@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.ComponentModel;
+using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using WarcraftApi.ApplicationServices.Application.Contracts;
 using WarcraftApi.CrossCutting.Aspects;
 using WarcraftApi.CrossCutting.Utils.Logger;
@@ -23,8 +25,12 @@ public class CharacterController : ControllerBase, ICharacterController
 
     [Log]
     [Timer]
-    [HttpGet("/characters/get_all_characters")]
-    public async Task<IActionResult> GetAllCharacters()
+    [HttpGet("get_all_characters")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Success")]
+    [SwaggerOperation("GetAllCharacters")]
+    public async Task<IActionResult> GetAllCharacters(
+        [SwaggerParameter("1")][DefaultValue("1")][FromRoute] string version
+    )
     {
         var result = await _characterService.GetCharacters() ?? throw new InvalidOperationException();
         var responseValidator = new CharacterResponseListValidator();
@@ -34,10 +40,15 @@ public class CharacterController : ControllerBase, ICharacterController
             
         return Ok(result);
     }
-    
+
     [Log]
-    [HttpGet("/characters/get_character_by_id/{id:int}")]
-    public async Task<IActionResult> GetCharacterDetailById(int id)
+    [HttpGet("get_character_by_id")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Success")]
+    [SwaggerOperation("GetCharacterDetailById")]
+    public async Task<IActionResult> GetCharacterDetailById(
+        [SwaggerParameter("1")][DefaultValue(1)][FromRoute] string version,
+        [SwaggerParameter("1")][FromQuery] int id
+    ) 
     {
         var requestValidator = new IdValidator();
         var requestValidationResult = await requestValidator.ValidateAsync(id);
@@ -54,8 +65,13 @@ public class CharacterController : ControllerBase, ICharacterController
     }
 
     [Log]
-    [HttpGet("/characters/get_character_by_name/{name}")]
-    public async Task<IActionResult> GetCharacterDetailByName(string name)
+    [HttpGet("get_character_by_name")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Success")]
+    [SwaggerOperation("GetCharacterDetailByName")]
+    public async Task<IActionResult> GetCharacterDetailByName(       
+        [SwaggerParameter("1")][DefaultValue(1)][FromRoute] string version,
+        [SwaggerParameter("Arthas Menethil")][FromQuery] string name
+    ) 
     {
         var requestValidator = new StringValidator();
         var responseValidatorResult = await requestValidator.ValidateAsync(name);

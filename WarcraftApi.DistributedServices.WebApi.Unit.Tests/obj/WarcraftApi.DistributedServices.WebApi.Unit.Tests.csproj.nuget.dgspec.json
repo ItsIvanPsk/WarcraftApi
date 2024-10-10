@@ -488,6 +488,10 @@
               "target": "Package",
               "version": "[6.5.0, )"
             },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
             "log4net": {
               "target": "Package",
               "version": "[3.0.1, )"
