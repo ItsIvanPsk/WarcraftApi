@@ -120,3 +120,4 @@ C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebA
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\obj\Debug\net6.0\WarcraftApi.DistributedServices.WebApi.csproj.Fody.CopyLocal.cache
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\obj\Debug\net6.0\WarcraftApi.DistributedServices.WebApi.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
