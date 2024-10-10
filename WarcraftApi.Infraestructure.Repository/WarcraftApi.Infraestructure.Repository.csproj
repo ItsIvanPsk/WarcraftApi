@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\WarcraftApi.CrossCutting.Utils\WarcraftApi.CrossCutting.Utils.csproj" />
         <ProjectReference Include="..\WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj"/>
         <ProjectReference Include="..\WarcraftApi.Infraestructure.Persistance\WarcraftApi.Infraestructure.Persistance.csproj" />
     </ItemGroup>

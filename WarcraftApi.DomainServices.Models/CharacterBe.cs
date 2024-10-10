@@ -8,4 +8,6 @@ public class CharacterBe
     public float Life { get; set; }
     public float Damage { get; set; }
     public float Speed { get; set; }
+    
+    public List<WeaponBe> Weapons = new List<WeaponBe>();
 }

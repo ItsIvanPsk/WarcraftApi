@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RaO6bteWe8r8VZhVqL+lXuKCVl/ltqPqDkP4POitvaSaqJlSwyBAadwOLHpxpl4tlUoXljpK1lucbjR8Lm6nEg==",
+  "dgSpecHash": "tTfGsHLXUmA3R0rkjKG/EDnEPxupsY/xyi7brlYqsd+5YR7GJTKcOVhxY17uw+c5RaFTmumS/d8uncVWHXjzww==",
   "success": true,
   "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.Models\\WarcraftApi.DistributedServices.Models.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -8,4 +8,6 @@ public class CharacterDto
     public float Life { get; set; }
     public float Damage { get; set; }
     public float Speed { get; set; }
+    public List<WeaponDto> Weapons { get; set; } = new List<WeaponDto>();
+
 }

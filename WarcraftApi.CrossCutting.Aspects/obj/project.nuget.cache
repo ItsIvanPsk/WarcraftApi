@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MNDMdnXiGr9Hh5cEfeqj5oyvdNX1rwq0+RisR1qyPHBB3aKzK6/BtedlYRqF+DidsX1MF4YLBw/wU/Prp9JCgw==",
+  "dgSpecHash": "p9arVMVQRWfDdfvocL0Qr0plgh2qak5VetqcmkNb6twENT/9565Bg1nfkng8S2FaymL03U5O8WfpQMH0XP+TQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.CrossCutting.Aspects\\WarcraftApi.CrossCutting.Aspects.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\serilog\\4.0.2\\serilog.4.0.2.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512",
     "C:\\Users\\ItsIvanPsk\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512",

@@ -4,6 +4,7 @@ using Swashbuckle.AspNetCore.Annotations;
 using WarcraftApi.ApplicationServices.Application.Contracts;
 using WarcraftApi.CrossCutting.Aspects;
 using WarcraftApi.CrossCutting.Utils.Logger;
+using WarcraftApi.DistributedServices.Models;
 using WarcraftApi.DistributedServices.WebApi.Contracts;
 using WarcraftApi.DistributedServices.WebApi.Validations;
 
@@ -37,9 +38,9 @@ public class CharacterController : ControllerBase, ICharacterController
         var responseValidationResult = await responseValidator.ValidateAsync(result);
         if (!responseValidationResult.IsValid)
             return BadRequest(responseValidationResult.Errors);
-            
-        return Ok(result);
+        return Ok(result);    
     }
+
 
     [Log]
     [HttpGet("get_character_by_id")]
@@ -47,7 +48,7 @@ public class CharacterController : ControllerBase, ICharacterController
     [SwaggerOperation("GetCharacterDetailById")]
     public async Task<IActionResult> GetCharacterDetailById(
         [SwaggerParameter("1")][DefaultValue(1)][FromRoute] string version,
-        [SwaggerParameter("1")][FromQuery] int id
+        [SwaggerParameter("1")][DefaultValue(1)][FromQuery] int id
     ) 
     {
         var requestValidator = new IdValidator();
@@ -70,14 +71,13 @@ public class CharacterController : ControllerBase, ICharacterController
     [SwaggerOperation("GetCharacterDetailByName")]
     public async Task<IActionResult> GetCharacterDetailByName(       
         [SwaggerParameter("1")][DefaultValue(1)][FromRoute] string version,
-        [SwaggerParameter("Arthas Menethil")][FromQuery] string name
+        [SwaggerParameter("Arthas Menethil")][DefaultValue("Arthas Menethil")][FromQuery] string name
     ) 
     {
         var requestValidator = new StringValidator();
         var responseValidatorResult = await requestValidator.ValidateAsync(name);
         if (!responseValidatorResult.IsValid)
             return BadRequest(responseValidatorResult.Errors);
-        
         var result = await _characterService.GetCharacterDetailByName(name) ?? throw new InvalidOperationException();
         var responseValidator = new CharacterResponseDtoValidator();
         var responseValidationResult = await responseValidator.ValidateAsync(result);

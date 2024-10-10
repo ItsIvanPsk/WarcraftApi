@@ -21,3 +21,5 @@ C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Appl
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\bin\Debug\net6.0\WarcraftApi.DomainServices.Models.pdb
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.pdb
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\bin\Debug\net6.0\WarcraftApi.CrossCutting.Utils.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.ApplicationServices.Application\bin\Debug\net6.0\WarcraftApi.CrossCutting.Utils.pdb
