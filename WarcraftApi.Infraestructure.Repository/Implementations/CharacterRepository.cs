@@ -1,7 +1,6 @@
 ﻿using System.Data;
 using System.Data.SqlTypes;
 using Microsoft.EntityFrameworkCore;
-using MySqlConnector; // Usar el espacio de nombres correcto para EF Core
 using WarcraftApi.DomainServices.RepositoryContracts;
 using WarcraftApi.Infraestructure.Models;
 using WarcraftApi.Infraestructure.Persistance;
