@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7v4qmbIKVtx6qR1/ketc7PobeRuiG15/m0/fsHrtHS9XOjbn4K53K2M0JjUhi7gHtwp/CvEHhoFIFJ3LhC6skQ==",
+  "dgSpecHash": "lVdBEeh8JxdPfMeVf+QN57n51bWHZADyusUlXt0GIJXim6DoJO9+u39rSVHHxQS36bI3nkIKcVeKb376S2MxQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ItsIvanPsk\\Proyects\\- Warcraft Api\\WarcraftApi.DistributedServices.WebApi.Unit.Tests\\WarcraftApi.DistributedServices.WebApi.Unit.Tests.csproj",
   "expectedPackageFiles": [

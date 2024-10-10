@@ -17,3 +17,7 @@ C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bi
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bin\Debug\net6.0\WarcraftApi.DomainServices.RepositoryContracts.pdb
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bin\Debug\net6.0\WarcraftApi.Infraestructure.Models.pdb
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\obj\Debug\net6.0\WarcraftApi.DomainServices.Domain.csproj.CopyComplete
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bin\Debug\net6.0\WarcraftApi.CrossCutting.Utils.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bin\Debug\net6.0\WarcraftApi.CrossCutting.Utils.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DomainServices.Domain\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.pdb

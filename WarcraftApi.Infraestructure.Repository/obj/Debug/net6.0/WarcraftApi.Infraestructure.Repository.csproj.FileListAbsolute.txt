@@ -19,3 +19,9 @@ C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Reposito
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.dll
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.Infraestructure.Persistance.pdb
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\obj\Debug\net6.0\WarcraftApi.Infraestructure.Repository.genruntimeconfig.cache
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.CrossCutting.Utils.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.DomainServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.CrossCutting.Utils.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.DistributedServices.Models.pdb
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.Infraestructure.Repository\bin\Debug\net6.0\WarcraftApi.DomainServices.Models.pdb

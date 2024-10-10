@@ -11,5 +11,12 @@ public class MappingProfile : Profile
     {
         CreateMap<CharacterDto, CharacterBe>().ReverseMap();
         CreateMap<CharacterBe, CharacterDm>().ReverseMap();
+        
+        CreateMap<WeaponDto, WeaponBe>().ReverseMap();
+        CreateMap<WeaponBe, WeaponDm>().ReverseMap();
+        
+        CreateMap<CharacterDm, CharacterBe>()
+            .ForMember(dest => dest.Weapons, opt => opt.MapFrom(src => src.CharacterWeapons.Select(cw => cw.Weapon)));
+        
     }
 }

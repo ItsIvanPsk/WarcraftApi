@@ -37,6 +37,9 @@ public class CharacterController : ControllerBase, ICharacterController
         var responseValidationResult = await responseValidator.ValidateAsync(result);
         if (!responseValidationResult.IsValid)
             return BadRequest(responseValidationResult.Errors);
+        
+        var logger = LoggerProvider.GetLogger();
+        logger?.LogInformation(result[0].Weapons[0].Name);
             
         return Ok(result);
     }

@@ -1530,6 +1530,7 @@
       "WarcraftApi.DomainServices.Domain/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "WarcraftApi.CrossCutting.Utils": "1.0.0",
           "WarcraftApi.DomainServices.Models": "1.0.0",
           "WarcraftApi.DomainServices.RepositoryContracts": "1.0.0"
         },
@@ -1571,6 +1572,7 @@
       "WarcraftApi.Infraestructure.Repository/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.33",
+          "WarcraftApi.CrossCutting.Utils": "1.0.0",
           "WarcraftApi.DomainServices.RepositoryContracts": "1.0.0",
           "WarcraftApi.Infraestructure.Persistance": "1.0.0"
         },

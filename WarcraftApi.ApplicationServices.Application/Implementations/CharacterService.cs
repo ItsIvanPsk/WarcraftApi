@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using WarcraftApi.ApplicationServices.Application.Contracts;
+using WarcraftApi.CrossCutting.Utils.Logger;
 using WarcraftApi.DistributedServices.Models;
 using WarcraftApi.DomainServices.Domain;
 using WarcraftApi.DomainServices.Domain.Contracts;

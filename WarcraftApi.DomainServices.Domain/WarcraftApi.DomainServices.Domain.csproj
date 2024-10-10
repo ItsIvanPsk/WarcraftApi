@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\WarcraftApi.CrossCutting.Utils\WarcraftApi.CrossCutting.Utils.csproj" />
         <ProjectReference Include="..\WarcraftApi.DomainServices.Models\WarcraftApi.DomainServices.Models.csproj"/>
         <ProjectReference Include="..\WarcraftApi.DomainServices.RepositoryContracts\WarcraftApi.DomainServices.RepositoryContracts.csproj"/>
     </ItemGroup>
