@@ -77,7 +77,7 @@ public class CharacterController : ControllerBase, ICharacterController
         var requestValidator = new StringValidator();
         var responseValidatorResult = await requestValidator.ValidateAsync(name);
         if (!responseValidatorResult.IsValid)
-            return BadRequest(responseValidatorResult.Errors);
+            return BadRequest(responseValidatorResult.Errors);  
         var result = await _characterService.GetCharacterDetailByName(name) ?? throw new InvalidOperationException();
         var responseValidator = new CharacterResponseDtoValidator();
         var responseValidationResult = await responseValidator.ValidateAsync(result);

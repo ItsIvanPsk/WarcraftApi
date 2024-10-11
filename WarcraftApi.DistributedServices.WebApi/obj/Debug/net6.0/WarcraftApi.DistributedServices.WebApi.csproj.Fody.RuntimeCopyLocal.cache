@@ -9,7 +9,11 @@ C:\Users\ItsIvanPsk\.nuget\packages\methodboundaryaspect.fody\2.0.149\lib\netsta
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnet.webapi.client\5.2.3\lib\net45\System.Net.Http.Formatting.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnet.webapi.core\5.2.3\lib\net45\System.Web.Http.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnet.webapi.versioning\5.1.0\lib\net45\Microsoft.AspNet.WebApi.Versioning.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnetcore.http\2.2.2\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnetcore.mvc.versioning\5.1.0\lib\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.aspnetcore.webutilities\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.entityframeworkcore\6.0.33\lib\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.entityframeworkcore.abstractions\6.0.33\lib\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.entityframeworkcore.design\6.0.33\lib\net6.0\Microsoft.EntityFrameworkCore.Design.dll
@@ -28,8 +32,10 @@ C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.hosting.abstractions\8.
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.logging\8.0.1\lib\net6.0\Microsoft.Extensions.Logging.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.2\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.logging.console\1.1.1\lib\netstandard1.3\Microsoft.Extensions.Logging.Console.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.objectpool\2.2.0\lib\netstandard2.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.options\8.0.2\lib\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.extensions.primitives\8.0.0\lib\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ItsIvanPsk\.nuget\packages\microsoft.net.http.headers\2.2.0\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.openapi\1.6.14\lib\netstandard2.0\Microsoft.OpenApi.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.win32.registry\4.7.0\lib\netstandard2.0\Microsoft.Win32.Registry.dll
 C:\Users\ItsIvanPsk\.nuget\packages\microsoft.win32.systemevents\6.0.0\lib\net6.0\Microsoft.Win32.SystemEvents.dll
@@ -51,7 +57,6 @@ C:\Users\ItsIvanPsk\.nuget\packages\swashbuckle.aspnetcore.swagger\6.8.1\lib\net
 C:\Users\ItsIvanPsk\.nuget\packages\swashbuckle.aspnetcore.swaggergen\6.8.1\lib\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ItsIvanPsk\.nuget\packages\swashbuckle.aspnetcore.swaggerui\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\ItsIvanPsk\.nuget\packages\system.appcontext\4.3.0\lib\netstandard1.6\System.AppContext.dll
-C:\Users\ItsIvanPsk\.nuget\packages\system.buffers\4.3.0\lib\netstandard1.1\System.Buffers.dll
 C:\Users\ItsIvanPsk\.nuget\packages\system.codedom\6.0.0\lib\net6.0\System.CodeDom.dll
 C:\Users\ItsIvanPsk\.nuget\packages\system.collections.concurrent\4.3.0\lib\netstandard1.3\System.Collections.Concurrent.dll
 C:\Users\ItsIvanPsk\.nuget\packages\system.collections.immutable\6.0.0\lib\net6.0\System.Collections.Immutable.dll
