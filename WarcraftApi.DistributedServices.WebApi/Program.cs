@@ -8,6 +8,7 @@ using WarcraftApi.ApplicationServices.Application.Contracts;
 using WarcraftApi.ApplicationServices.Application.Implementations;
 using WarcraftApi.CrossCutting.Utils.Logger;
 using WarcraftApi.CrossCutting.Utils.Mapper;
+using WarcraftApi.CrossCutting.Utils.Middlewares;
 using WarcraftApi.DistributedServices.WebApi.Contracts;
 using WarcraftApi.DistributedServices.WebApi.Controllers;
 using WarcraftApi.DomainServices.Domain.Contracts;
@@ -78,6 +79,8 @@ var app = builder.Build();
 var loggerService = app.Services.GetRequiredService<ILoggerService>();
 LoggerProvider.SetLogger(loggerService);
 
+// Middleware
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {

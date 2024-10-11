@@ -122,6 +122,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Serilog": {
               "target": "Package",
               "version": "[4.0.2, )"
