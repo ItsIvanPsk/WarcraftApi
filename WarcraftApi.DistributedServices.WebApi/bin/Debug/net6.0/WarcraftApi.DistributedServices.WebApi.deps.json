@@ -16,6 +16,7 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.33",
           "Microsoft.Extensions.Logging": "8.0.1",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.4",
+          "Newtonsoft.Json": "13.0.3",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.3",
           "Pomelo.EntityFrameworkCore.MySql.Design": "1.1.2",
           "Serilog": "4.0.2",
@@ -120,7 +121,7 @@
       },
       "Microsoft.AspNet.WebApi.Client/5.2.3": {
         "dependencies": {
-          "Newtonsoft.Json": "6.0.4"
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "lib/net45/System.Net.Http.Formatting.dll": {
@@ -486,11 +487,11 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/6.0.4": {
+      "Newtonsoft.Json/13.0.3": {
         "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.4.17603"
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
           }
         }
       },
@@ -1523,6 +1524,9 @@
         }
       },
       "WarcraftApi.DistributedServices.Models/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "runtime": {
           "WarcraftApi.DistributedServices.Models.dll": {}
         }
@@ -1530,6 +1534,7 @@
       "WarcraftApi.DomainServices.Domain/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "WarcraftApi.CrossCutting.Utils": "1.0.0",
           "WarcraftApi.DomainServices.Models": "1.0.0",
           "WarcraftApi.DomainServices.RepositoryContracts": "1.0.0"
         },
@@ -1571,6 +1576,7 @@
       "WarcraftApi.Infraestructure.Repository/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.33",
+          "WarcraftApi.CrossCutting.Utils": "1.0.0",
           "WarcraftApi.DomainServices.RepositoryContracts": "1.0.0",
           "WarcraftApi.Infraestructure.Persistance": "1.0.0"
         },
@@ -1894,12 +1900,12 @@
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
     },
-    "Newtonsoft.Json/6.0.4": {
+    "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FyQLmEpjsCrEP+znauLDGAi+h6i9YnaMkITlfIoiM4RYyX3nki306bTHsr/0okiIvIc7BJhQTbOAIZVocccFUw==",
-      "path": "newtonsoft.json/6.0.4",
-      "hashPath": "newtonsoft.json.6.0.4.nupkg.sha512"
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
     "Pomelo.EntityFrameworkCore.MySql/6.0.3": {
       "type": "package",

@@ -9,3 +9,4 @@ C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Mode
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\refint\WarcraftApi.DistributedServices.Models.dll
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\WarcraftApi.DistributedServices.Models.pdb
 C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\ref\WarcraftApi.DistributedServices.Models.dll
+C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.Models\obj\Debug\net6.0\WarcraftApi.DistributedServices.Models.csproj.AssemblyReference.cache

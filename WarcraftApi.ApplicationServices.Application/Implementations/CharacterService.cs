@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using WarcraftApi.ApplicationServices.Application.Contracts;
+using WarcraftApi.CrossCutting.Utils.Logger;
 using WarcraftApi.DistributedServices.Models;
 using WarcraftApi.DomainServices.Domain;
 using WarcraftApi.DomainServices.Domain.Contracts;
@@ -24,6 +25,7 @@ public class CharacterService : ICharacterService
         var result = await _characterDomain.GetCharacters();
         return _mapper.Map<List<CharacterDto>>(result);
     }
+
 
     public async Task<CharacterDto> GetCharacterDetailById(int id)
     {

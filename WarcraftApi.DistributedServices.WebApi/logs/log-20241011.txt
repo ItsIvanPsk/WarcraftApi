@@ -1,0 +1,446 @@
+2024-10-11 10:06:02.283 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-11 10:06:02.328 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-11 10:06:02.333 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 10:06:02.335 +02:00 [INF] Hosting environment: Development
+2024-10-11 10:06:02.335 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-11 10:06:03.011 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:06:03.222 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 213.7174ms
+2024-10-11 10:06:03.435 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:06:03.536 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.1124ms
+2024-10-11 10:06:16.779 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:06:16.795 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:06:16.845 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:06:17.546 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:06:17.555 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:06:18.518 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:06:19.072 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1514 ms
+2024-10-11 10:06:19.073 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:06:19.168 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:06:19.473 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:06:19.483 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1924.0647ms.
+2024-10-11 10:06:19.501 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:06:19.549 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 2695.8256ms
+2024-10-11 10:06:19.551 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:06:19.564 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 2785.0165ms
+2024-10-11 10:07:20.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_character_by_id?id=2 - -
+2024-10-11 10:07:20.775 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:07:20.781 +02:00 [INF] Route matched with {action = "GetCharacterDetailById", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailById(System.String, Int32) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:07:20.801 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:07:20.802 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailById with parameters: 1, 2
+2024-10-11 10:07:20.828 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:07:20.911 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailById
+2024-10-11 10:07:20.913 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Damage`, `t`.`Life`, `t`.`Lore`, `t`.`Name`, `t`.`Speed`, `t0`.`CharacterId`, `t0`.`WeaponId`, `t0`.`Id`, `t0`.`Damage`, `t0`.`Lore`, `t0`.`Name`
+FROM (
+    SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+    FROM `Characters` AS `c`
+    WHERE `c`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`CharacterId`
+ORDER BY `t`.`Id`, `t0`.`CharacterId`, `t0`.`WeaponId`
+2024-10-11 10:07:20.920 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 118.2402ms.
+2024-10-11 10:07:20.921 +02:00 [INF] Executing OkObjectResult, writing value of type 'WarcraftApi.DistributedServices.Models.CharacterDto'.
+2024-10-11 10:07:20.925 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) in 141.7752ms
+2024-10-11 10:07:20.926 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:07:20.927 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_character_by_id?id=2 - - - 200 - application/json;+charset=utf-8 153.3686ms
+2024-10-11 10:08:23.563 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:08:23.563 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:08:23.570 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:08:23.576 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:08:23.631 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:08:23.646 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:08:23.651 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:08:23.652 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 74.6178ms.
+2024-10-11 10:08:23.653 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:08:23.656 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 84.4298ms
+2024-10-11 10:08:23.657 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:08:23.658 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 95.4879ms
+2024-10-11 10:09:22.692 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:09:22.693 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:09:22.696 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:09:22.698 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:09:22.700 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:09:22.711 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:09:22.714 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:09:22.715 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.3224ms.
+2024-10-11 10:09:22.716 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:09:22.719 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 21.9727ms
+2024-10-11 10:09:22.720 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:09:22.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 29.8278ms
+2024-10-11 10:09:37.735 +02:00 [INF] Application is shutting down...
+2024-10-11 10:09:45.853 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-11 10:09:45.903 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-11 10:09:45.908 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 10:09:45.910 +02:00 [INF] Hosting environment: Development
+2024-10-11 10:09:45.910 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-11 10:09:46.295 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:09:46.549 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 256.7107ms
+2024-10-11 10:09:46.752 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:09:46.872 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.9432ms
+2024-10-11 10:09:49.240 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:09:49.253 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:09:49.294 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:09:49.633 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:09:49.642 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:09:50.518 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:09:50.985 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1340 ms
+2024-10-11 10:09:50.986 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:09:51.074 +02:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:09:51.350 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:09:51.359 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1714.3243ms.
+2024-10-11 10:09:51.376 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:09:51.413 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 2111.1478ms
+2024-10-11 10:09:51.415 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:09:51.426 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 2185.9206ms
+2024-10-11 10:10:18.531 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:10:18.538 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 7.6272ms
+2024-10-11 10:10:18.569 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/swagger-ui.css - -
+2024-10-11 10:10:18.569 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/swagger-ui-bundle.js - -
+2024-10-11 10:10:18.570 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/swagger-ui-standalone-preset.js - -
+2024-10-11 10:10:18.589 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-10-11 10:10:18.601 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/swagger-ui.css - - - 200 144929 text/css 31.6699ms
+2024-10-11 10:10:18.603 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-10-11 10:10:18.605 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 35.6864ms
+2024-10-11 10:10:18.609 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-10-11 10:10:18.610 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 40.9856ms
+2024-10-11 10:10:18.725 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:10:18.729 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.7341ms
+2024-10-11 10:10:18.741 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/favicon-32x32.png - -
+2024-10-11 10:10:18.742 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-10-11 10:10:18.743 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/favicon-32x32.png - - - 200 628 image/png 2.1883ms
+2024-10-11 10:10:20.975 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:10:20.976 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:10:20.981 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:10:20.988 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:10:20.989 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:10:20.991 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:10:21.011 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 21 ms
+2024-10-11 10:10:21.011 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:10:21.012 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:10:21.015 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:10:21.016 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 27.3958ms.
+2024-10-11 10:10:21.017 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:10:21.033 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 50.501ms
+2024-10-11 10:10:21.034 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:10:21.040 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: Attempted to access a missing method.
+   at WarcraftApi.DistributedServices.Models.CharacterDto.get_Type()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-10-11 10:10:21.076 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 500 - text/plain;+charset=utf-8 101.3144ms
+2024-10-11 10:11:04.872 +02:00 [INF] Application is shutting down...
+2024-10-11 10:11:11.796 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-11 10:11:11.847 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-11 10:11:11.852 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 10:11:11.854 +02:00 [INF] Hosting environment: Development
+2024-10-11 10:11:11.855 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-11 10:11:12.312 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:11:12.550 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 240.7009ms
+2024-10-11 10:11:12.769 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:11:12.883 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.2427ms
+2024-10-11 10:11:15.204 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:11:15.217 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:11:15.255 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:11:15.604 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:11:15.612 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:11:16.511 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:11:16.991 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1376 ms
+2024-10-11 10:11:16.992 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:11:17.076 +02:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:11:17.364 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:11:17.374 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1758.0756ms.
+2024-10-11 10:11:17.391 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:11:17.429 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 2166.459ms
+2024-10-11 10:11:17.431 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:11:17.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 2239.4405ms
+2024-10-11 10:11:25.791 +02:00 [INF] Application is shutting down...
+2024-10-11 10:11:29.840 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-11 10:11:29.884 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-11 10:11:29.890 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 10:11:29.892 +02:00 [INF] Hosting environment: Development
+2024-10-11 10:11:29.893 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-11 10:11:30.120 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:11:30.351 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 233.9606ms
+2024-10-11 10:11:30.502 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:11:30.619 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.9647ms
+2024-10-11 10:11:32.794 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:11:32.806 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:11:32.842 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:11:33.156 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:11:33.163 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:11:33.963 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:11:34.347 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1180 ms
+2024-10-11 10:11:34.348 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:11:34.418 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:11:34.650 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:11:34.658 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1491.4103ms.
+2024-10-11 10:11:34.673 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:11:34.705 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 1856.663ms
+2024-10-11 10:11:34.707 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:11:34.716 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 1922.4163ms
+2024-10-11 10:11:44.089 +02:00 [INF] Application is shutting down...
+2024-10-11 10:11:51.058 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-11 10:11:51.103 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-11 10:11:51.109 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 10:11:51.110 +02:00 [INF] Hosting environment: Development
+2024-10-11 10:11:51.111 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-11 10:11:51.542 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:11:51.789 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 250.1094ms
+2024-10-11 10:11:51.914 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:11:52.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.3305ms
+2024-10-11 10:11:53.930 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:11:53.943 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:11:53.983 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:11:54.330 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:11:54.338 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:11:55.187 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:11:55.625 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1283 ms
+2024-10-11 10:11:55.625 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:11:55.706 +02:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:11:55.962 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:11:55.971 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1629.5628ms.
+2024-10-11 10:11:55.986 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:11:56.028 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 2038.4122ms
+2024-10-11 10:11:56.030 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:11:56.041 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 2111.2064ms
+2024-10-11 10:12:05.555 +02:00 [INF] Application is shutting down...
+2024-10-11 10:12:13.675 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-11 10:12:13.721 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-11 10:12:13.727 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 10:12:13.728 +02:00 [INF] Hosting environment: Development
+2024-10-11 10:12:13.729 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-11 10:12:14.239 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:12:14.474 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 237.9561ms
+2024-10-11 10:12:14.595 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:12:14.714 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.9349ms
+2024-10-11 10:12:16.493 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:12:16.506 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:12:16.545 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:12:16.885 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:12:16.894 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:12:17.769 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:12:18.235 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1337 ms
+2024-10-11 10:12:18.236 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:12:18.319 +02:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:12:18.586 +02:00 [INF] Character: Thrall, Lore: Ex jefe de guerra de la Horda y chamán legendario., Life: 1000, Damage: 150, Speed: 50, Weapons: [Doomhammer]
+2024-10-11 10:12:18.595 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1698.0663ms.
+2024-10-11 10:12:18.611 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:12:18.654 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 2102.6868ms
+2024-10-11 10:12:18.657 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:12:18.667 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 2174.7158ms
+2024-10-11 10:12:32.255 +02:00 [INF] Application is shutting down...
+2024-10-11 10:13:08.731 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-11 10:13:08.769 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-11 10:13:08.774 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 10:13:08.775 +02:00 [INF] Hosting environment: Development
+2024-10-11 10:13:08.776 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-11 10:13:08.963 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:13:09.168 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 207.3616ms
+2024-10-11 10:13:09.306 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:13:09.409 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.2228ms
+2024-10-11 10:13:15.224 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:13:15.234 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:13:15.262 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:13:15.519 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:13:15.526 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:13:16.258 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:13:16.747 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1217 ms
+2024-10-11 10:13:16.748 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:13:16.836 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:13:17.155 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1624.5629ms.
+2024-10-11 10:13:17.174 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:13:17.227 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 1956.9626ms
+2024-10-11 10:13:17.229 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:13:17.242 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 2017.1116ms
+2024-10-11 10:13:44.845 +02:00 [INF] Application is shutting down...
+2024-10-11 10:13:51.169 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-11 10:13:51.213 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-11 10:13:51.218 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 10:13:51.220 +02:00 [INF] Hosting environment: Development
+2024-10-11 10:13:51.220 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-11 10:13:51.386 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-11 10:13:51.618 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 234.9070ms
+2024-10-11 10:13:51.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-11 10:13:51.854 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.9544ms
+2024-10-11 10:13:54.014 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - -
+2024-10-11 10:13:54.027 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:13:54.065 +02:00 [INF] Route matched with {action = "GetAllCharacters", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCharacters(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:13:54.389 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:13:54.397 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetAllCharacters with parameters: 1
+2024-10-11 10:13:55.233 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:13:55.653 +02:00 [INF] [Warcraft API] <=> Execution of CharacterController.GetAllCharacters completed in 1253 ms
+2024-10-11 10:13:55.654 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetAllCharacters
+2024-10-11 10:13:55.732 +02:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`, `t`.`CharacterId`, `t`.`WeaponId`, `t`.`Id`, `t`.`Damage`, `t`.`Lore`, `t`.`Name`
+FROM `Characters` AS `c`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t` ON `c`.`Id` = `t`.`CharacterId`
+ORDER BY `c`.`Id`, `t`.`CharacterId`, `t`.`WeaponId`
+2024-10-11 10:13:55.987 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1587.6824ms.
+2024-10-11 10:13:56.003 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WarcraftApi.DistributedServices.Models.CharacterDto, WarcraftApi.DistributedServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-11 10:13:56.046 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi) in 1973.0987ms
+2024-10-11 10:13:56.048 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetAllCharacters (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:13:56.058 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_all_characters - - - 200 - application/json;+charset=utf-8 2044.0867ms
+2024-10-11 10:14:07.272 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_character_by_id?id=1 - -
+2024-10-11 10:14:07.275 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:14:07.280 +02:00 [INF] Route matched with {action = "GetCharacterDetailById", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailById(System.String, Int32) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:14:07.295 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:14:07.297 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailById with parameters: 1, 1
+2024-10-11 10:14:07.322 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:14:07.400 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailById
+2024-10-11 10:14:07.403 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Damage`, `t`.`Life`, `t`.`Lore`, `t`.`Name`, `t`.`Speed`, `t0`.`CharacterId`, `t0`.`WeaponId`, `t0`.`Id`, `t0`.`Damage`, `t0`.`Lore`, `t0`.`Name`
+FROM (
+    SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+    FROM `Characters` AS `c`
+    WHERE `c`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`CharacterId`
+ORDER BY `t`.`Id`, `t0`.`CharacterId`, `t0`.`WeaponId`
+2024-10-11 10:14:07.414 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 117.3766ms.
+2024-10-11 10:14:07.416 +02:00 [INF] Executing OkObjectResult, writing value of type 'WarcraftApi.DistributedServices.Models.CharacterDto'.
+2024-10-11 10:14:07.417 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi) in 135.2929ms
+2024-10-11 10:14:07.419 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailById (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:14:07.420 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_character_by_id?id=1 - - - 200 - application/json;+charset=utf-8 147.1609ms
+2024-10-11 10:14:14.201 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/Character/get_character_by_name?name=Arthas%20Menethil - -
+2024-10-11 10:14:14.202 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:14:14.207 +02:00 [INF] Route matched with {action = "GetCharacterDetailByName", controller = "Character"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCharacterDetailByName(System.String, System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController (WarcraftApi.DistributedServices.WebApi).
+2024-10-11 10:14:14.213 +02:00 [INF] Executing action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) - Validation state: "Valid"
+2024-10-11 10:14:14.215 +02:00 [INF] [Warcraft API] <=> Entering CharacterController.GetCharacterDetailByName with parameters: 1, Arthas Menethil
+2024-10-11 10:14:14.274 +02:00 [INF] Entity Framework Core 6.0.33 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.1.0-mysql 
+2024-10-11 10:14:14.290 +02:00 [INF] [Warcraft API] <=> Exiting CharacterController.GetCharacterDetailByName
+2024-10-11 10:14:14.294 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Damage`, `t`.`Life`, `t`.`Lore`, `t`.`Name`, `t`.`Speed`, `t0`.`CharacterId`, `t0`.`WeaponId`, `t0`.`Id`, `t0`.`Damage`, `t0`.`Lore`, `t0`.`Name`
+FROM (
+    SELECT `c`.`Id`, `c`.`Damage`, `c`.`Life`, `c`.`Lore`, `c`.`Name`, `c`.`Speed`
+    FROM `Characters` AS `c`
+    WHERE `c`.`Name` = @__name_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN (
+    SELECT `c0`.`CharacterId`, `c0`.`WeaponId`, `w`.`Id`, `w`.`Damage`, `w`.`Lore`, `w`.`Name`
+    FROM `Characters_Weapons` AS `c0`
+    INNER JOIN `Weapons` AS `w` ON `c0`.`WeaponId` = `w`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`CharacterId`
+ORDER BY `t`.`Id`, `t0`.`CharacterId`, `t0`.`WeaponId`
+2024-10-11 10:14:14.297 +02:00 [INF] Executed action method WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 82.3988ms.
+2024-10-11 10:14:14.298 +02:00 [INF] Executing OkObjectResult, writing value of type 'WarcraftApi.DistributedServices.Models.CharacterDto'.
+2024-10-11 10:14:14.300 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi) in 90.7579ms
+2024-10-11 10:14:14.301 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.CharacterController.GetCharacterDetailByName (WarcraftApi.DistributedServices.WebApi)'
+2024-10-11 10:14:14.302 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/Character/get_character_by_name?name=Arthas%20Menethil - - - 200 - application/json;+charset=utf-8 100.7555ms

@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WarcraftApi.Infraestructure.Persistance;
 
 #nullable disable
 
@@ -46,6 +45,74 @@ namespace WarcraftApi.Infraestructure.Persistance.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Characters", (string)null);
+                });
+
+            modelBuilder.Entity("WarcraftApi.Infraestructure.Models.CharacterWeaponDm", b =>
+                {
+                    b.Property<int>("CharacterId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WeaponId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CharacterId", "WeaponId");
+
+                    b.HasIndex("WeaponId");
+
+                    b.ToTable("Characters_Weapons", (string)null);
+                });
+
+            modelBuilder.Entity("WarcraftApi.Infraestructure.Models.WeaponDm", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<float>("Damage")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Lore")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Weapons", (string)null);
+                });
+
+            modelBuilder.Entity("WarcraftApi.Infraestructure.Models.CharacterWeaponDm", b =>
+                {
+                    b.HasOne("WarcraftApi.Infraestructure.Models.CharacterDm", "Character")
+                        .WithMany("CharacterWeapons")
+                        .HasForeignKey("CharacterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WarcraftApi.Infraestructure.Models.WeaponDm", "Weapon")
+                        .WithMany("CharacterWeapons")
+                        .HasForeignKey("WeaponId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Character");
+
+                    b.Navigation("Weapon");
+                });
+
+            modelBuilder.Entity("WarcraftApi.Infraestructure.Models.CharacterDm", b =>
+                {
+                    b.Navigation("CharacterWeapons");
+                });
+
+            modelBuilder.Entity("WarcraftApi.Infraestructure.Models.WeaponDm", b =>
+                {
+                    b.Navigation("CharacterWeapons");
                 });
 #pragma warning restore 612, 618
         }
