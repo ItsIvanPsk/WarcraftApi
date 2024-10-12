@@ -1,0 +1,32 @@
+2024-10-12 10:10:17.921 +02:00 [INF] Now listening on: https://localhost:7168
+2024-10-12 10:10:17.966 +02:00 [INF] Now listening on: http://localhost:5142
+2024-10-12 10:10:17.971 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-12 10:10:17.973 +02:00 [INF] Hosting environment: Development
+2024-10-12 10:10:17.974 +02:00 [INF] Content root path: C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.DistributedServices.WebApi\
+2024-10-12 10:10:18.171 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - -
+2024-10-12 10:10:18.418 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - - - 200 - text/html;charset=utf-8 249.4343ms
+2024-10-12 10:10:18.567 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - -
+2024-10-12 10:10:18.686 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.6458ms
+2024-10-12 10:10:23.364 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/v1/HealthCheck - -
+2024-10-12 10:10:23.376 +02:00 [INF] Executing endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.HealthCheckController.Get (WarcraftApi.DistributedServices.WebApi)'
+2024-10-12 10:10:23.420 +02:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller WarcraftApi.DistributedServices.WebApi.Controllers.HealthCheckController (WarcraftApi.DistributedServices.WebApi).
+2024-10-12 10:10:23.429 +02:00 [INF] Executed action WarcraftApi.DistributedServices.WebApi.Controllers.HealthCheckController.Get (WarcraftApi.DistributedServices.WebApi) in 2.5717ms
+2024-10-12 10:10:23.433 +02:00 [INF] Executed endpoint 'WarcraftApi.DistributedServices.WebApi.Controllers.HealthCheckController.Get (WarcraftApi.DistributedServices.WebApi)'
+2024-10-12 10:10:23.436 +02:00 [ERR] Unhandled exception: Unable to resolve service for type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService' while attempting to activate 'WarcraftApi.DistributedServices.WebApi.Controllers.HealthCheckController'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService' while attempting to activate 'WarcraftApi.DistributedServices.WebApi.Controllers.HealthCheckController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WarcraftApi.CrossCutting.Utils.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ItsIvanPsk\Proyects\- Warcraft Api\WarcraftApi.CrossCutting.Utils\Middlewares\GlobalExceptionMiddleware.cs:line 23
+2024-10-12 10:10:23.499 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/v1/HealthCheck - - - 500 - application/json 135.3890ms
